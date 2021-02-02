@@ -29,24 +29,24 @@ import argparse
 def getConfig(args=sys.argv[1:]):
     parser = argparse.ArgumentParser(description="Parses command.")
     # ROI
-    parser.add_argument("--lat_min", type=float, default=47.5,
+    parser.add_argument("--lat_min", type=float, default=40.33,
                         help="Lat min.")
-    parser.add_argument("--lat_max", type=float, default=49.5,
+    parser.add_argument("--lat_max", type=float, default=40.77,
                         help="Lat max.")
-    parser.add_argument("--lon_min", type=float, default=-7.0,
+    parser.add_argument("--lon_min", type=float, default=-74.30,
                         help="Lon min.")
-    parser.add_argument("--lon_max", type=float, default=-4.0,
+    parser.add_argument("--lon_max", type=float, default=-73.50,
                         help="Lon max.")
      
     # File paths
     parser.add_argument("--dataset_dir", type=str, 
-                        default="/users/local/dnguyen/Datasets/AIS_datasets/mt314/aivdm/2017/",
+                        default="/home/big/Desktop/KEEPER/GeoTrackNet_train_default/data/",
                         help="Dir to dataset.")    
     parser.add_argument("--l_input_filepath", type=str, nargs='+',
-                        default=["ct_2017010203_10_20_test_track.pkl"],
+                        default=["AIS_20180101_test_track.pkl"],
                         help="List of path to input files.")
     parser.add_argument("--output_filepath", type=str,
-                        default="./ct_2017010203_10_20/ct_2017010203_10_20_test.pkl",
+                        default="./AIS_processed/AIS_20180101_test_track.pkl",
                         help="Path to output file.")
     
     parser.add_argument("-v", "--verbose",dest='verbose',action='store_true', help="Verbose mode.")
@@ -60,7 +60,7 @@ LAT_MIN,LAT_MAX,LON_MIN,LON_MAX = config.lat_min,config.lat_max,config.lon_min,c
 
 LAT_RANGE = LAT_MAX - LAT_MIN
 LON_RANGE = LON_MAX - LON_MIN
-SPEED_MAX = 30.0  # knots
+SPEED_MAX = 30.0 #30.0  # knots
 DURATION_MAX = 24 #h
 
 EPOCH = datetime(1970, 1, 1)
@@ -158,7 +158,7 @@ print("Removing AIS track whose length is smaller than 20 or those last less tha
 
 for k in list(voyages.keys()):
     duration = voyages[k][-1,TIMESTAMP] - voyages[k][0,TIMESTAMP]
-    if (len(voyages[k]) < 20) or (duration < 4*3600):
+    if (len(voyages[k]) < 20) or (duration < 4*3600):  #or (duration < 4*3600):
         voyages.pop(k, None)
 
 
@@ -236,7 +236,7 @@ for k in tqdm(list(Vs.keys())):
     tmp = np.split(v,idx)
     for subtrack in tmp:
         # only use tracks whose duration >= 4 hours
-        if len(subtrack) >= 12*4:
+        if len(subtrack) >= 12*4: #len(subtrack) >= 12*4:
             Data[count] = subtrack
             count += 1
 print(len(Data))
@@ -390,17 +390,17 @@ print("min len: ",minlen)
 ## Loading coastline polygon.
 # For visualisation purpose, delete this part if you do not have coastline
 # shapfile
-
-coastline_filename = "./streetmap_coastline_Bretagne.pkl"
-
-if "bretagne" in config.output_filepath:
-    with open(coastline_filename, 'rb') as f:
-        l_coastline_poly = pickle.load(f)
+#
+#coastline_filename = "./streetmap_coastline_Bretagne.pkl"
+#
+#if "bretagne" in config.output_filepath:
+#    with open(coastline_filename, 'rb') as f:
+#        l_coastline_poly = pickle.load(f)
 
 # In[35]:
 
 
-config.output_filepath
+#config.output_filepath
 
 
 # In[36]:
@@ -422,10 +422,10 @@ for d_i in range(N):
     plt.plot(v_lon,v_lat,color=c,linewidth=0.8)
 
 ## Coastlines
-if "bretagne" in config.output_filepath:
-    for point in l_coastline_poly:
-        poly = np.array(point)
-        plt.plot(poly[:,0],poly[:,1],color="k",linewidth=0.8)
+#if "bretagne" in config.output_filepath:
+#    for point in l_coastline_poly:
+#        poly = np.array(point)
+#        plt.plot(poly[:,0],poly[:,1],color="k",linewidth=0.8)
 
 plt.xlim([LON_MIN,LON_MAX])
 plt.ylim([LAT_MIN,LAT_MAX])

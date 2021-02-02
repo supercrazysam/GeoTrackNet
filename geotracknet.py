@@ -147,10 +147,45 @@ if config.mode == "save_logprob":
     for d_i in tqdm(list(range(math.ceil(dataset_size/config.batch_size)))):
         inp, tar, mmsi, t_start, t_end, seq_len, log_weights_np, true_np, ll_t =\
                  sess.run([inputs, targets, mmsis, time_starts, time_ends, lengths, log_weights, track_true, ll_per_t])
+
+        print("LIST")
+        print(list(range(math.ceil(dataset_size/config.batch_size))))
+        print("DATASET_SIZE")
+        print(dataset_size)
+        print("config.batch_size")
+        print(config.batch_size)
+        print("INDEX")
+        print(inp.shape[1])
+
         for d_idx_inbatch in range(inp.shape[1]):
             D = dict()
             seq_len_d = seq_len[d_idx_inbatch]
-            D["seq"] = np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1].reshape(-1,4)
+
+            print(np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1].shape)
+
+            print("tar[:seq_len_d,d_idx_inbatch,:]")
+            print(tar[:seq_len_d,d_idx_inbatch,:].shape)
+
+            print("np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])")
+            print(tar[:seq_len_d,d_idx_inbatch,:].shape)            
+
+            print("tar")
+            #print(tar)
+            print(tar.shape)
+            print("seq_len_d")
+            print(seq_len_d)
+            print("d_idx_inbatch")
+            print(d_idx_inbatch)
+
+            print("LENGTH")
+            print(len(np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1]))
+            print(np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1].shape)
+
+            temp_length = len(np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1])
+
+            D["seq"] = np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1][:((temp_length//4)*4)].reshape(-1,4)
+             
+            #D["seq"] = np.nonzero(tar[:seq_len_d,d_idx_inbatch,:])[1].reshape(-1,4)
             D["t_start"] = t_start[d_idx_inbatch]
             D["t_end"] = t_end[d_idx_inbatch]
             D["mmsi"] = mmsi[d_idx_inbatch]
@@ -201,7 +236,7 @@ if config.mode == "save_logprob":
 #===============================================================================
 elif config.mode == "local_logprob":
     """ LOCAL THRESHOLD
-    The ROI is divided into small cells, in each cell, we calculate the mean and
+    The ROI is dividpped into small cells, in each cell, we calculate the mean and
     the std of log[p(x_t|h_t)].
     """
     # Init
@@ -269,6 +304,10 @@ elif config.mode == "contrario_detection":
     with open(os.path.join(save_dir,"Map_logprob-"+\
               str(config.cell_lat_reso)+"-"+str(config.cell_lat_reso)+".pkl"),"rb") as f:
         Map_logprob = pickle.load(f)
+
+
+    #print("Map_logprob")
+    #print(Map_logprob.keys())
     # Load the logprob
     with open(outputs_path,"rb") as f:
         l_dict = pickle.load(f)
@@ -283,9 +322,19 @@ elif config.mode == "contrario_detection":
         try:
         # if True:
             tmp = D["seq"]
+
+            #print("tmp")
+            #print(tmp.shape)
+            #print(tmp)
+            
             m_log_weights_np = D["log_weights"]
             v_A = np.zeros(len(tmp))
             for d_timestep in range(2*6,len(tmp)):
+
+                #print("tmp[d_timestep")
+                #print(tmp[d_timestep])
+                
+                    
                 d_row = int(tmp[d_timestep,0]*config.onehot_lat_reso/config.cell_lat_reso)
                 d_col = int((tmp[d_timestep,1]-config.onehot_lat_bins)*config.onehot_lat_reso/config.cell_lon_reso)
                 d_logprob_t = np.mean(m_log_weights_np[d_timestep,:])
@@ -309,6 +358,7 @@ elif config.mode == "contrario_detection":
             if len(contrario_utils.nonzero_segments(v_anomalies)) > 0:
                 D["anomaly_idx"] = v_anomalies
                 l_dict_anomaly.append(D)
+                
         except:
             n_error += 1
     print("Number of processed tracks: ",len(l_dict))

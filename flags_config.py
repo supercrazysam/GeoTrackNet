@@ -67,8 +67,8 @@ tf.app.flags.DEFINE_string("mode", "train",
 tf.app.flags.DEFINE_string("bound", "elbo",
                            "The bound to optimize. Can be 'elbo', or 'fivo'.")
 
-tf.app.flags.DEFINE_integer("latent_size", 64,
-                            "The size of the latent state of the model.")
+tf.app.flags.DEFINE_integer("latent_size", 100,
+                            "The size of the latent state of the model.") #64
 
 tf.app.flags.DEFINE_string("log_dir", "./chkpt",
                            "The directory to keep checkpoints and summaries in.")
@@ -83,11 +83,11 @@ tf.app.flags.DEFINE_float("ll_thresh", -17.47,
 
 
 # Dataset flags
-tf.app.flags.DEFINE_string("dataset_dir", "./data",
+tf.app.flags.DEFINE_string("dataset_dir", "./AIS_processed",
                            "Dataset directory")
-tf.app.flags.DEFINE_string("trainingset_name", "ct_aruba_2019/ct_aruba_2019_train.pkl",
+tf.app.flags.DEFINE_string("trainingset_name", "AIS_20180101_valid_track.pkl",
                            "Path to load the trainingset from.")
-tf.app.flags.DEFINE_string("testset_name", "ct_aruba_2019/ct_aruba_2019_test.pkl",
+tf.app.flags.DEFINE_string("testset_name", "AIS_20180101_test_track.pkl",
                            "Path to load the testset from.")
 tf.app.flags.DEFINE_string("split", "train",
                            "Split to evaluate the model on. Can be 'train', 'valid', or 'test'.")
@@ -107,17 +107,30 @@ tf.app.flags.DEFINE_integer("random_seed", None,
 tf.app.flags.DEFINE_float("interval_max", 2*3600,
                           "Maximum interval between two successive AIS messages (in second).")
 tf.app.flags.DEFINE_integer("min_duration", 4,
-                            "Min duration (hour) of a vessel track")
+                            "Min duration (hour) of a vessel track") #4
 
 # Four-hot-encoding flags.
-tf.app.flags.DEFINE_float("lat_min", 11.0,
+##tf.app.flags.DEFINE_float("lat_min", 11.0,
+##                          "ROI")
+##tf.app.flags.DEFINE_float("lat_max", 14.0,
+##                          "ROI")
+##tf.app.flags.DEFINE_float("lon_min", -71.0,
+##                          "ROI")
+##tf.app.flags.DEFINE_float("lon_max", -68.0,
+##                          "ROI")
+
+tf.app.flags.DEFINE_float("lat_min", 40.33,
                           "ROI")
-tf.app.flags.DEFINE_float("lat_max", 14.0,
+tf.app.flags.DEFINE_float("lat_max", 40.77,
                           "ROI")
-tf.app.flags.DEFINE_float("lon_min", -71.0,
+tf.app.flags.DEFINE_float("lon_min", -74.30,
                           "ROI")
-tf.app.flags.DEFINE_float("lon_max", -68.0,
+tf.app.flags.DEFINE_float("lon_max", -73.50,
                           "ROI")
+
+
+
+
 tf.app.flags.DEFINE_float("onehot_lat_reso", 0.01,
                           "Resolution of the lat one-hot vector (degree)")
 tf.app.flags.DEFINE_float("onehot_lon_reso",  0.01,
@@ -193,13 +206,19 @@ config = FLAGS
 #===============================================
 
 ## FOUR-HOT VECTOR 
-config.onehot_lat_bins = math.ceil((config.lat_max-config.lat_min)/config.onehot_lat_reso)
-config.onehot_lon_bins = math.ceil((config.lon_max-config.lon_min)/config.onehot_lon_reso)
+#config.onehot_lat_bins = math.ceil((config.lat_max-config.lat_min)/config.onehot_lat_reso)
+#config.onehot_lon_bins = math.ceil((config.lon_max-config.lon_min)/config.onehot_lon_reso)
+
+config.onehot_lat_bins = round((config.lat_max-config.lat_min)/config.onehot_lat_reso)
+config.onehot_lon_bins = round((config.lon_max-config.lon_min)/config.onehot_lon_reso)
+
 config.onehot_sog_bins = math.ceil(SPEED_MAX/config.onehot_sog_reso)
 config.onehot_cog_bins = math.ceil(360/config.onehot_cog_reso)
 
 config.data_dim  = config.onehot_lat_bins + config.onehot_lon_bins\
                  + config.onehot_sog_bins + config.onehot_cog_bins # error with data_dimension
+
+#print("flags_config.py data_dim="+str(config.data_dim))
 
 ## LOCAL THRESHOLDING
 config.n_lat_cells = math.ceil((config.lat_max-config.lat_min)/config.cell_lat_reso)

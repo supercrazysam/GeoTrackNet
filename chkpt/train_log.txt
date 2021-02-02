@@ -1,0 +1,2063 @@
+python3 geotracknet.py \ --mode=train \ --dataset_dir=./data/AIS_processed \ --trainingset_name=AIS_20180101_valid_track.pkl \ --testset_name=AIS_20180101_test_track.pkl \ --lat_min= 40.33 \ --lat_max= 40.77 \ --lon_min=-74.30 \ --lon_max=-73.50 \ --latent_size=100 \ --batch_size=32 \ --num_samples=16 \ --learning_rate=0.0003 
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/sonnet/__init__.py:57: PendingDeprecationWarning: The Spec() class will be removed in 3.1; use SimpleSpec() instead.
+  version_spec = semantic_version.Spec('>=' + min_version)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+Training set: ./AIS_processed/AIS_20180101_valid_track.pkl
+Test set: ./AIS_processed/AIS_20180101_valid_track.pkl
+./AIS_processed/AIS_20180101_valid_track.pkl
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+/home/sam/Videos/KEEPER/AIS/lib/python3.6/site-packages/tensorflow/python/util/tf_inspect.py:75: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  return _inspect.getargspec(target)
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+2021-01-31 12:20:03.568218: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 1, elbo bound per timestep: -17.615906
+INFO:tensorflow:global_step/sec: 1.63391
+INFO:tensorflow:Step 101, elbo bound per timestep: -16.389626
+INFO:tensorflow:Saving checkpoints for 193 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65507
+INFO:tensorflow:Step 201, elbo bound per timestep: -16.051672
+INFO:tensorflow:global_step/sec: 1.64912
+INFO:tensorflow:Step 301, elbo bound per timestep: -14.709246
+INFO:tensorflow:Saving checkpoints for 393 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6704
+INFO:tensorflow:Step 401, elbo bound per timestep: -13.978088
+INFO:tensorflow:global_step/sec: 1.63354
+INFO:tensorflow:Step 501, elbo bound per timestep: -13.141907
+INFO:tensorflow:Saving checkpoints for 593 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6954
+INFO:tensorflow:Step 601, elbo bound per timestep: -12.344179
+INFO:tensorflow:global_step/sec: 1.68448
+INFO:tensorflow:Step 701, elbo bound per timestep: -12.169353
+INFO:tensorflow:Saving checkpoints for 794 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64654
+INFO:tensorflow:Step 801, elbo bound per timestep: -12.101862
+INFO:tensorflow:global_step/sec: 1.66244
+INFO:tensorflow:Step 901, elbo bound per timestep: -11.547781
+INFO:tensorflow:Saving checkpoints for 995 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69415
+INFO:tensorflow:Step 1001, elbo bound per timestep: -11.455486
+INFO:tensorflow:global_step/sec: 1.63229
+INFO:tensorflow:Step 1101, elbo bound per timestep: -11.406932
+INFO:tensorflow:Saving checkpoints for 1193 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66558
+INFO:tensorflow:Step 1201, elbo bound per timestep: -10.737178
+INFO:tensorflow:global_step/sec: 1.60914
+INFO:tensorflow:Step 1301, elbo bound per timestep: -10.855405
+INFO:tensorflow:Saving checkpoints for 1391 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67073
+INFO:tensorflow:Step 1401, elbo bound per timestep: -11.475946
+INFO:tensorflow:global_step/sec: 1.66176
+INFO:tensorflow:Step 1501, elbo bound per timestep: -10.285616
+INFO:tensorflow:Saving checkpoints for 1589 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6258
+INFO:tensorflow:Step 1601, elbo bound per timestep: -11.125971
+INFO:tensorflow:global_step/sec: 1.66423
+INFO:tensorflow:Step 1701, elbo bound per timestep: -11.108780
+INFO:tensorflow:Saving checkpoints for 1786 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6246
+INFO:tensorflow:Step 1801, elbo bound per timestep: -10.133074
+INFO:tensorflow:global_step/sec: 1.67599
+INFO:tensorflow:Step 1901, elbo bound per timestep: -10.660427
+INFO:tensorflow:Saving checkpoints for 1985 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62916
+INFO:tensorflow:Step 2001, elbo bound per timestep: -10.485656
+INFO:tensorflow:global_step/sec: 1.67249
+INFO:tensorflow:Step 2101, elbo bound per timestep: -10.488106
+INFO:tensorflow:Saving checkpoints for 2184 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64893
+INFO:tensorflow:Step 2201, elbo bound per timestep: -10.679230
+INFO:tensorflow:global_step/sec: 1.64664
+INFO:tensorflow:Step 2301, elbo bound per timestep: -10.697514
+INFO:tensorflow:Saving checkpoints for 2383 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67128
+INFO:tensorflow:Step 2401, elbo bound per timestep: -9.974941
+INFO:tensorflow:global_step/sec: 1.60854
+INFO:tensorflow:Step 2501, elbo bound per timestep: -10.031272
+INFO:tensorflow:Saving checkpoints for 2580 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66136
+INFO:tensorflow:Step 2601, elbo bound per timestep: -10.426286
+INFO:tensorflow:global_step/sec: 1.6554
+INFO:tensorflow:Step 2701, elbo bound per timestep: -10.277640
+INFO:tensorflow:Saving checkpoints for 2780 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66617
+INFO:tensorflow:Step 2801, elbo bound per timestep: -9.990050
+INFO:tensorflow:global_step/sec: 1.70049
+INFO:tensorflow:Step 2901, elbo bound per timestep: -10.692820
+INFO:tensorflow:Saving checkpoints for 2983 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67314
+INFO:tensorflow:Step 3001, elbo bound per timestep: -10.015461
+INFO:tensorflow:global_step/sec: 1.67749
+INFO:tensorflow:Step 3101, elbo bound per timestep: -10.245173
+INFO:tensorflow:Saving checkpoints for 3186 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68498
+INFO:tensorflow:Step 3201, elbo bound per timestep: -9.796858
+INFO:tensorflow:global_step/sec: 1.70545
+INFO:tensorflow:Step 3301, elbo bound per timestep: -10.617063
+INFO:tensorflow:Saving checkpoints for 3391 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6938
+INFO:tensorflow:Step 3401, elbo bound per timestep: -10.029087
+INFO:tensorflow:global_step/sec: 1.70085
+INFO:tensorflow:Step 3501, elbo bound per timestep: -10.585042
+INFO:tensorflow:Saving checkpoints for 3596 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7022
+INFO:tensorflow:Step 3601, elbo bound per timestep: -9.482595
+INFO:tensorflow:global_step/sec: 1.69249
+INFO:tensorflow:Step 3701, elbo bound per timestep: -9.825565
+INFO:tensorflow:global_step/sec: 1.71975
+INFO:tensorflow:Saving checkpoints for 3801 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 3801, elbo bound per timestep: -9.903721
+INFO:tensorflow:global_step/sec: 1.6839
+INFO:tensorflow:Step 3901, elbo bound per timestep: -10.290307
+INFO:tensorflow:global_step/sec: 1.715
+INFO:tensorflow:Step 4001, elbo bound per timestep: -10.111109
+INFO:tensorflow:Saving checkpoints for 4005 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68533
+INFO:tensorflow:Step 4101, elbo bound per timestep: -9.446095
+INFO:tensorflow:global_step/sec: 1.71328
+INFO:tensorflow:Step 4201, elbo bound per timestep: -9.537508
+INFO:tensorflow:Saving checkpoints for 4209 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68647
+INFO:tensorflow:Step 4301, elbo bound per timestep: -9.848520
+INFO:tensorflow:global_step/sec: 1.71518
+INFO:tensorflow:Step 4401, elbo bound per timestep: -10.113188
+INFO:tensorflow:Saving checkpoints for 4413 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.60859
+INFO:tensorflow:Step 4501, elbo bound per timestep: -10.163801
+INFO:tensorflow:global_step/sec: 1.70903
+INFO:tensorflow:Step 4601, elbo bound per timestep: -10.103071
+INFO:tensorflow:Saving checkpoints for 4613 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64985
+INFO:tensorflow:Step 4701, elbo bound per timestep: -10.297735
+INFO:tensorflow:global_step/sec: 1.67546
+INFO:tensorflow:Step 4801, elbo bound per timestep: -9.578288
+INFO:tensorflow:Saving checkpoints for 4814 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69221
+INFO:tensorflow:Step 4901, elbo bound per timestep: -9.736706
+INFO:tensorflow:global_step/sec: 1.63198
+INFO:tensorflow:Step 5001, elbo bound per timestep: -9.088975
+INFO:tensorflow:Saving checkpoints for 5013 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68722
+INFO:tensorflow:Step 5101, elbo bound per timestep: -9.564634
+INFO:tensorflow:global_step/sec: 1.61167
+INFO:tensorflow:Step 5201, elbo bound per timestep: -9.474790
+INFO:tensorflow:Saving checkpoints for 5212 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70134
+INFO:tensorflow:Step 5301, elbo bound per timestep: -9.956574
+INFO:tensorflow:global_step/sec: 1.63578
+INFO:tensorflow:Step 5401, elbo bound per timestep: -9.167868
+INFO:tensorflow:Saving checkpoints for 5412 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67129
+INFO:tensorflow:Step 5501, elbo bound per timestep: -8.969377
+INFO:tensorflow:global_step/sec: 1.66657
+INFO:tensorflow:Step 5601, elbo bound per timestep: -9.535357
+INFO:tensorflow:Saving checkpoints for 5613 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64248
+INFO:tensorflow:Step 5701, elbo bound per timestep: -9.930756
+INFO:tensorflow:global_step/sec: 1.68348
+INFO:tensorflow:Step 5801, elbo bound per timestep: -9.867736
+INFO:tensorflow:Saving checkpoints for 5814 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.58698
+INFO:tensorflow:Step 5901, elbo bound per timestep: -9.735355
+INFO:tensorflow:global_step/sec: 1.6678
+INFO:tensorflow:Step 6001, elbo bound per timestep: -9.340807
+INFO:tensorflow:Saving checkpoints for 6011 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64033
+INFO:tensorflow:Step 6101, elbo bound per timestep: -9.426955
+INFO:tensorflow:global_step/sec: 1.66143
+INFO:tensorflow:Step 6201, elbo bound per timestep: -9.904619
+INFO:tensorflow:Saving checkpoints for 6210 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6569
+INFO:tensorflow:Step 6301, elbo bound per timestep: -9.487276
+INFO:tensorflow:global_step/sec: 1.6362
+INFO:tensorflow:Step 6401, elbo bound per timestep: -9.360580
+INFO:tensorflow:Saving checkpoints for 6408 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6702
+INFO:tensorflow:Step 6501, elbo bound per timestep: -9.331636
+INFO:tensorflow:global_step/sec: 1.60534
+INFO:tensorflow:Step 6601, elbo bound per timestep: -9.045527
+INFO:tensorflow:Saving checkpoints for 6606 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68853
+INFO:tensorflow:Step 6701, elbo bound per timestep: -9.872033
+INFO:tensorflow:global_step/sec: 1.62316
+INFO:tensorflow:Step 6801, elbo bound per timestep: -9.517535
+INFO:tensorflow:Saving checkpoints for 6805 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64719
+INFO:tensorflow:Step 6901, elbo bound per timestep: -9.425267
+INFO:tensorflow:global_step/sec: 1.66043
+INFO:tensorflow:Step 7001, elbo bound per timestep: -9.199377
+INFO:tensorflow:Saving checkpoints for 7004 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62594
+INFO:tensorflow:Step 7101, elbo bound per timestep: -10.191947
+INFO:tensorflow:global_step/sec: 1.66761
+INFO:tensorflow:Step 7201, elbo bound per timestep: -9.083191
+INFO:tensorflow:Saving checkpoints for 7202 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.61589
+INFO:tensorflow:Step 7301, elbo bound per timestep: -9.280891
+INFO:tensorflow:Saving checkpoints for 7399 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64971
+INFO:tensorflow:Step 7401, elbo bound per timestep: -9.458464
+INFO:tensorflow:global_step/sec: 1.66908
+INFO:tensorflow:Step 7501, elbo bound per timestep: -9.670165
+INFO:tensorflow:Saving checkpoints for 7598 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64018
+INFO:tensorflow:Step 7601, elbo bound per timestep: -9.803087
+INFO:tensorflow:global_step/sec: 1.70142
+INFO:tensorflow:Step 7701, elbo bound per timestep: -9.682236
+INFO:tensorflow:Saving checkpoints for 7799 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66362
+INFO:tensorflow:Step 7801, elbo bound per timestep: -8.950864
+INFO:tensorflow:global_step/sec: 1.6485
+INFO:tensorflow:Step 7901, elbo bound per timestep: -9.161238
+INFO:tensorflow:Saving checkpoints for 8000 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6885
+INFO:tensorflow:Step 8001, elbo bound per timestep: -9.139620
+INFO:tensorflow:global_step/sec: 1.7002
+INFO:tensorflow:Step 8101, elbo bound per timestep: -9.336617
+INFO:tensorflow:Saving checkpoints for 8200 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62068
+INFO:tensorflow:Step 8201, elbo bound per timestep: -9.845989
+INFO:tensorflow:global_step/sec: 1.69747
+INFO:tensorflow:Step 8301, elbo bound per timestep: -8.311611
+INFO:tensorflow:global_step/sec: 1.66332
+INFO:tensorflow:Step 8401, elbo bound per timestep: -9.522505
+INFO:tensorflow:Saving checkpoints for 8402 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66316
+INFO:tensorflow:Step 8501, elbo bound per timestep: -10.097214
+INFO:tensorflow:global_step/sec: 1.7005
+INFO:tensorflow:Step 8601, elbo bound per timestep: -9.625157
+INFO:tensorflow:Saving checkpoints for 8605 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6252
+INFO:tensorflow:Step 8701, elbo bound per timestep: -9.462365
+INFO:tensorflow:global_step/sec: 1.70719
+INFO:tensorflow:Step 8801, elbo bound per timestep: -9.667408
+INFO:tensorflow:Saving checkpoints for 8805 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.61142
+INFO:tensorflow:Step 8901, elbo bound per timestep: -9.078981
+INFO:tensorflow:global_step/sec: 1.70396
+INFO:tensorflow:Step 9001, elbo bound per timestep: -9.162323
+INFO:tensorflow:Saving checkpoints for 9004 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65992
+INFO:tensorflow:Step 9101, elbo bound per timestep: -9.072495
+INFO:tensorflow:global_step/sec: 1.6642
+INFO:tensorflow:Step 9201, elbo bound per timestep: -9.235872
+INFO:tensorflow:Saving checkpoints for 9203 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66624
+INFO:tensorflow:Step 9301, elbo bound per timestep: -9.165976
+INFO:tensorflow:global_step/sec: 1.64001
+INFO:tensorflow:Step 9401, elbo bound per timestep: -9.184856
+INFO:tensorflow:Saving checkpoints for 9402 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68282
+INFO:tensorflow:Step 9501, elbo bound per timestep: -9.557277
+INFO:tensorflow:global_step/sec: 1.63218
+INFO:tensorflow:Step 9601, elbo bound per timestep: -9.285854
+INFO:tensorflow:Saving checkpoints for 9603 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6706
+INFO:tensorflow:Step 9701, elbo bound per timestep: -8.633769
+INFO:tensorflow:global_step/sec: 1.65055
+INFO:tensorflow:Step 9801, elbo bound per timestep: -9.509932
+INFO:tensorflow:Saving checkpoints for 9802 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65277
+INFO:tensorflow:Step 9901, elbo bound per timestep: -9.437020
+INFO:tensorflow:global_step/sec: 1.67494
+INFO:tensorflow:Step 10001, elbo bound per timestep: -9.307144
+INFO:tensorflow:Saving checkpoints for 10002 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63179
+INFO:tensorflow:Step 10101, elbo bound per timestep: -9.007895
+INFO:tensorflow:global_step/sec: 1.67365
+INFO:tensorflow:Saving checkpoints for 10201 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 10201, elbo bound per timestep: -9.586737
+INFO:tensorflow:global_step/sec: 1.63881
+INFO:tensorflow:Step 10301, elbo bound per timestep: -9.328584
+INFO:tensorflow:global_step/sec: 1.6795
+INFO:tensorflow:Saving checkpoints for 10401 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 10401, elbo bound per timestep: -8.828315
+INFO:tensorflow:global_step/sec: 1.65679
+INFO:tensorflow:Step 10501, elbo bound per timestep: -9.227075
+INFO:tensorflow:global_step/sec: 1.65854
+INFO:tensorflow:Saving checkpoints for 10601 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 10601, elbo bound per timestep: -8.739327
+INFO:tensorflow:global_step/sec: 1.66649
+INFO:tensorflow:Step 10701, elbo bound per timestep: -9.200064
+INFO:tensorflow:Saving checkpoints for 10800 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63513
+INFO:tensorflow:Step 10801, elbo bound per timestep: -9.230066
+INFO:tensorflow:global_step/sec: 1.70499
+INFO:tensorflow:Step 10901, elbo bound per timestep: -9.039637
+INFO:tensorflow:global_step/sec: 1.62842
+INFO:tensorflow:Saving checkpoints for 11001 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 11001, elbo bound per timestep: -8.967641
+INFO:tensorflow:global_step/sec: 1.70089
+INFO:tensorflow:Step 11101, elbo bound per timestep: -9.960793
+INFO:tensorflow:global_step/sec: 1.66106
+INFO:tensorflow:Step 11201, elbo bound per timestep: -9.020420
+INFO:tensorflow:Saving checkpoints for 11202 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63004
+INFO:tensorflow:Step 11301, elbo bound per timestep: -9.016949
+INFO:tensorflow:global_step/sec: 1.69723
+INFO:tensorflow:Step 11401, elbo bound per timestep: -9.096437
+INFO:tensorflow:Saving checkpoints for 11403 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62792
+INFO:tensorflow:Step 11501, elbo bound per timestep: -9.042223
+INFO:tensorflow:global_step/sec: 1.70349
+INFO:tensorflow:Step 11601, elbo bound per timestep: -8.997784
+INFO:tensorflow:Saving checkpoints for 11604 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67056
+INFO:tensorflow:Step 11701, elbo bound per timestep: -8.902817
+INFO:tensorflow:global_step/sec: 1.67762
+INFO:tensorflow:Step 11801, elbo bound per timestep: -9.572453
+INFO:tensorflow:Saving checkpoints for 11805 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65259
+INFO:tensorflow:Step 11901, elbo bound per timestep: -8.639439
+INFO:tensorflow:global_step/sec: 1.67116
+INFO:tensorflow:Step 12001, elbo bound per timestep: -9.434629
+INFO:tensorflow:Saving checkpoints for 12007 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63754
+INFO:tensorflow:Step 12101, elbo bound per timestep: -8.982150
+INFO:tensorflow:global_step/sec: 1.68298
+INFO:tensorflow:Step 12201, elbo bound per timestep: -8.712277
+INFO:tensorflow:Saving checkpoints for 12207 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.61491
+INFO:tensorflow:Step 12301, elbo bound per timestep: -8.978796
+INFO:tensorflow:global_step/sec: 1.65893
+INFO:tensorflow:Step 12401, elbo bound per timestep: -9.495349
+INFO:tensorflow:Saving checkpoints for 12404 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64716
+INFO:tensorflow:Step 12501, elbo bound per timestep: -9.189425
+INFO:tensorflow:global_step/sec: 1.6889
+INFO:tensorflow:Step 12601, elbo bound per timestep: -8.960365
+INFO:tensorflow:Saving checkpoints for 12605 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66209
+INFO:tensorflow:Step 12701, elbo bound per timestep: -8.823906
+INFO:tensorflow:global_step/sec: 1.6348
+INFO:tensorflow:Step 12801, elbo bound per timestep: -9.202828
+INFO:tensorflow:Saving checkpoints for 12803 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66911
+INFO:tensorflow:Step 12901, elbo bound per timestep: -9.009365
+INFO:tensorflow:global_step/sec: 1.63297
+INFO:tensorflow:Step 13001, elbo bound per timestep: -8.634823
+INFO:tensorflow:Saving checkpoints for 13002 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66172
+INFO:tensorflow:Step 13101, elbo bound per timestep: -8.631519
+INFO:tensorflow:Saving checkpoints for 13200 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6046
+INFO:tensorflow:Step 13201, elbo bound per timestep: -8.994978
+INFO:tensorflow:global_step/sec: 1.60347
+INFO:tensorflow:Step 13301, elbo bound per timestep: -8.873789
+INFO:tensorflow:Saving checkpoints for 13396 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65389
+INFO:tensorflow:Step 13401, elbo bound per timestep: -8.378654
+INFO:tensorflow:global_step/sec: 1.61672
+INFO:tensorflow:Step 13501, elbo bound per timestep: -8.842932
+INFO:tensorflow:Saving checkpoints for 13593 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65794
+INFO:tensorflow:Step 13601, elbo bound per timestep: -8.701637
+INFO:tensorflow:global_step/sec: 1.61569
+INFO:tensorflow:Step 13701, elbo bound per timestep: -8.931965
+INFO:tensorflow:Saving checkpoints for 13791 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65804
+INFO:tensorflow:Step 13801, elbo bound per timestep: -8.403582
+INFO:tensorflow:global_step/sec: 1.65433
+INFO:tensorflow:Step 13901, elbo bound per timestep: -9.433964
+INFO:tensorflow:Saving checkpoints for 13990 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64024
+INFO:tensorflow:Step 14001, elbo bound per timestep: -8.619635
+INFO:tensorflow:global_step/sec: 1.67972
+INFO:tensorflow:Step 14101, elbo bound per timestep: -8.820772
+INFO:tensorflow:Saving checkpoints for 14189 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62437
+INFO:tensorflow:Step 14201, elbo bound per timestep: -8.844769
+INFO:tensorflow:global_step/sec: 1.6745
+INFO:tensorflow:Step 14301, elbo bound per timestep: -9.007965
+INFO:tensorflow:Saving checkpoints for 14389 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64271
+INFO:tensorflow:Step 14401, elbo bound per timestep: -8.759552
+INFO:tensorflow:global_step/sec: 1.67547
+INFO:tensorflow:Step 14501, elbo bound per timestep: -8.913776
+INFO:tensorflow:Saving checkpoints for 14590 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6579
+INFO:tensorflow:Step 14601, elbo bound per timestep: -8.487804
+INFO:tensorflow:global_step/sec: 1.69081
+INFO:tensorflow:Step 14701, elbo bound per timestep: -8.824105
+INFO:tensorflow:Saving checkpoints for 14792 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69217
+INFO:tensorflow:Step 14801, elbo bound per timestep: -9.000235
+INFO:tensorflow:global_step/sec: 1.64399
+INFO:tensorflow:Step 14901, elbo bound per timestep: -8.180820
+INFO:tensorflow:Saving checkpoints for 14993 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70517
+INFO:tensorflow:Step 15001, elbo bound per timestep: -9.017435
+INFO:tensorflow:global_step/sec: 1.66788
+INFO:tensorflow:Step 15101, elbo bound per timestep: -8.794019
+INFO:tensorflow:Saving checkpoints for 15196 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69448
+INFO:tensorflow:Step 15201, elbo bound per timestep: -9.164254
+INFO:tensorflow:global_step/sec: 1.69244
+INFO:tensorflow:Step 15301, elbo bound per timestep: -8.393303
+INFO:tensorflow:Saving checkpoints for 15400 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70997
+INFO:tensorflow:Step 15401, elbo bound per timestep: -8.594787
+INFO:tensorflow:global_step/sec: 1.61569
+INFO:tensorflow:Step 15501, elbo bound per timestep: -8.322636
+INFO:tensorflow:Saving checkpoints for 15600 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71799
+INFO:tensorflow:Step 15601, elbo bound per timestep: -8.983743
+INFO:tensorflow:global_step/sec: 1.6766
+INFO:tensorflow:Step 15701, elbo bound per timestep: -9.348907
+INFO:tensorflow:Saving checkpoints for 15800 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64787
+INFO:tensorflow:Step 15801, elbo bound per timestep: -9.320098
+INFO:tensorflow:global_step/sec: 1.68763
+INFO:tensorflow:Step 15901, elbo bound per timestep: -8.908509
+INFO:tensorflow:Saving checkpoints for 16000 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63422
+INFO:tensorflow:Step 16001, elbo bound per timestep: -9.320545
+INFO:tensorflow:global_step/sec: 1.67842
+INFO:tensorflow:Step 16101, elbo bound per timestep: -8.924132
+INFO:tensorflow:global_step/sec: 1.69462
+INFO:tensorflow:Step 16201, elbo bound per timestep: -8.920128
+INFO:tensorflow:Saving checkpoints for 16202 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6319
+INFO:tensorflow:Step 16301, elbo bound per timestep: -8.880344
+INFO:tensorflow:global_step/sec: 1.70053
+INFO:tensorflow:Step 16401, elbo bound per timestep: -8.465738
+INFO:tensorflow:Saving checkpoints for 16403 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.61616
+INFO:tensorflow:Step 16501, elbo bound per timestep: -9.322773
+INFO:tensorflow:global_step/sec: 1.70035
+INFO:tensorflow:Step 16601, elbo bound per timestep: -9.150213
+INFO:tensorflow:Saving checkpoints for 16603 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65952
+INFO:tensorflow:Step 16701, elbo bound per timestep: -8.711521
+INFO:tensorflow:global_step/sec: 1.65942
+INFO:tensorflow:Step 16801, elbo bound per timestep: -9.087146
+INFO:tensorflow:Saving checkpoints for 16803 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67249
+INFO:tensorflow:Step 16901, elbo bound per timestep: -8.180725
+INFO:tensorflow:global_step/sec: 1.62213
+INFO:tensorflow:Step 17001, elbo bound per timestep: -8.927191
+INFO:tensorflow:Saving checkpoints for 17002 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68791
+INFO:tensorflow:Step 17101, elbo bound per timestep: -9.089260
+INFO:tensorflow:global_step/sec: 1.64093
+INFO:tensorflow:Step 17201, elbo bound per timestep: -8.784563
+INFO:tensorflow:Saving checkpoints for 17202 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66275
+INFO:tensorflow:Step 17301, elbo bound per timestep: -9.060228
+INFO:tensorflow:global_step/sec: 1.66665
+INFO:tensorflow:Step 17401, elbo bound per timestep: -8.514318
+INFO:tensorflow:Saving checkpoints for 17402 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63354
+INFO:tensorflow:Step 17501, elbo bound per timestep: -8.710211
+INFO:tensorflow:global_step/sec: 1.69831
+INFO:tensorflow:Step 17601, elbo bound per timestep: -8.287919
+INFO:tensorflow:Saving checkpoints for 17603 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62851
+INFO:tensorflow:Step 17701, elbo bound per timestep: -8.737740
+INFO:tensorflow:global_step/sec: 1.71924
+INFO:tensorflow:Step 17801, elbo bound per timestep: -8.689873
+INFO:tensorflow:Saving checkpoints for 17804 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64713
+INFO:tensorflow:Step 17901, elbo bound per timestep: -8.661681
+INFO:tensorflow:global_step/sec: 1.68326
+INFO:tensorflow:Step 18001, elbo bound per timestep: -8.453759
+INFO:tensorflow:Saving checkpoints for 18006 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69348
+INFO:tensorflow:Step 18101, elbo bound per timestep: -9.111969
+INFO:tensorflow:global_step/sec: 1.65136
+INFO:tensorflow:Step 18201, elbo bound per timestep: -8.417109
+INFO:tensorflow:Saving checkpoints for 18207 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67652
+INFO:tensorflow:Step 18301, elbo bound per timestep: -9.050983
+INFO:tensorflow:global_step/sec: 1.63405
+INFO:tensorflow:Step 18401, elbo bound per timestep: -8.114010
+INFO:tensorflow:Saving checkpoints for 18405 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66967
+INFO:tensorflow:Step 18501, elbo bound per timestep: -8.939018
+INFO:tensorflow:global_step/sec: 1.64819
+INFO:tensorflow:Step 18601, elbo bound per timestep: -9.081990
+INFO:tensorflow:Saving checkpoints for 18604 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65644
+INFO:tensorflow:Step 18701, elbo bound per timestep: -9.040447
+INFO:tensorflow:global_step/sec: 1.66836
+INFO:tensorflow:Step 18801, elbo bound per timestep: -8.632957
+INFO:tensorflow:Saving checkpoints for 18804 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64129
+INFO:tensorflow:Step 18901, elbo bound per timestep: -8.871720
+INFO:tensorflow:global_step/sec: 1.69039
+INFO:tensorflow:Step 19001, elbo bound per timestep: -9.183448
+INFO:tensorflow:Saving checkpoints for 19005 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69022
+INFO:tensorflow:Step 19101, elbo bound per timestep: -8.726971
+INFO:tensorflow:global_step/sec: 1.66269
+INFO:tensorflow:Step 19201, elbo bound per timestep: -9.377007
+INFO:tensorflow:Saving checkpoints for 19206 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66051
+INFO:tensorflow:Step 19301, elbo bound per timestep: -8.438644
+INFO:tensorflow:global_step/sec: 1.68028
+INFO:tensorflow:Step 19401, elbo bound per timestep: -8.622301
+INFO:tensorflow:Saving checkpoints for 19407 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.60817
+INFO:tensorflow:Step 19501, elbo bound per timestep: -8.279133
+INFO:tensorflow:global_step/sec: 1.68844
+INFO:tensorflow:Step 19601, elbo bound per timestep: -8.692970
+INFO:tensorflow:Saving checkpoints for 19605 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.63991
+INFO:tensorflow:Step 19701, elbo bound per timestep: -8.566157
+INFO:tensorflow:global_step/sec: 1.66142
+INFO:tensorflow:Step 19801, elbo bound per timestep: -8.663008
+INFO:tensorflow:Saving checkpoints for 19803 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67227
+INFO:tensorflow:Step 19901, elbo bound per timestep: -8.802948
+INFO:tensorflow:global_step/sec: 1.64845
+INFO:tensorflow:Step 20001, elbo bound per timestep: -9.052840
+INFO:tensorflow:Saving checkpoints for 20003 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7005
+INFO:tensorflow:Step 20101, elbo bound per timestep: -8.636637
+INFO:tensorflow:global_step/sec: 1.60174
+INFO:tensorflow:Step 20201, elbo bound per timestep: -8.873194
+INFO:tensorflow:Saving checkpoints for 20203 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.60054
+INFO:tensorflow:Step 20301, elbo bound per timestep: -8.304474
+INFO:tensorflow:Saving checkpoints for 20394 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.56747
+INFO:tensorflow:Step 20401, elbo bound per timestep: -9.112860
+INFO:tensorflow:global_step/sec: 1.4974
+INFO:tensorflow:Step 20501, elbo bound per timestep: -8.966856
+INFO:tensorflow:Saving checkpoints for 20579 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.60562
+INFO:tensorflow:Step 20601, elbo bound per timestep: -7.977472
+INFO:tensorflow:global_step/sec: 1.58003
+INFO:tensorflow:Step 20701, elbo bound per timestep: -8.255133
+INFO:tensorflow:Saving checkpoints for 20767 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.55291
+INFO:tensorflow:Step 20801, elbo bound per timestep: -8.938474
+INFO:tensorflow:global_step/sec: 1.36323
+INFO:tensorflow:Step 20901, elbo bound per timestep: -8.828424
+INFO:tensorflow:Saving checkpoints for 20930 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.1647
+INFO:tensorflow:Step 21001, elbo bound per timestep: -9.155565
+INFO:tensorflow:Saving checkpoints for 21070 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.15132
+INFO:tensorflow:Step 21101, elbo bound per timestep: -8.134223
+INFO:tensorflow:global_step/sec: 1.37799
+INFO:tensorflow:Step 21201, elbo bound per timestep: -9.609623
+INFO:tensorflow:Saving checkpoints for 21231 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.42348
+INFO:tensorflow:Step 21301, elbo bound per timestep: -8.738094
+INFO:tensorflow:Saving checkpoints for 21396 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.33094
+INFO:tensorflow:Step 21401, elbo bound per timestep: -8.704824
+INFO:tensorflow:global_step/sec: 1.26253
+INFO:tensorflow:Step 21501, elbo bound per timestep: -9.215118
+INFO:tensorflow:Saving checkpoints for 21551 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.21288
+INFO:tensorflow:Step 21601, elbo bound per timestep: -8.954145
+INFO:tensorflow:Saving checkpoints for 21690 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.17474
+INFO:tensorflow:Step 21701, elbo bound per timestep: -8.551341
+INFO:tensorflow:global_step/sec: 1.34826
+INFO:tensorflow:Step 21801, elbo bound per timestep: -9.325722
+INFO:tensorflow:Saving checkpoints for 21851 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.32256
+INFO:tensorflow:Step 21901, elbo bound per timestep: -9.030432
+INFO:tensorflow:global_step/sec: 1.33084
+INFO:tensorflow:Step 22001, elbo bound per timestep: -8.967306
+INFO:tensorflow:Saving checkpoints for 22012 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.31265
+INFO:tensorflow:Step 22101, elbo bound per timestep: -8.389487
+INFO:tensorflow:Saving checkpoints for 22170 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.33811
+INFO:tensorflow:Step 22201, elbo bound per timestep: -8.467748
+INFO:tensorflow:global_step/sec: 1.60002
+INFO:tensorflow:Step 22301, elbo bound per timestep: -8.543947
+INFO:tensorflow:Saving checkpoints for 22342 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.1153
+INFO:tensorflow:Step 22401, elbo bound per timestep: -8.473664
+INFO:tensorflow:Saving checkpoints for 22469 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.03992
+INFO:tensorflow:Step 22501, elbo bound per timestep: -8.495045
+INFO:tensorflow:Saving checkpoints for 22596 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.05701
+INFO:tensorflow:Step 22601, elbo bound per timestep: -8.601757
+INFO:tensorflow:global_step/sec: 1.01448
+INFO:tensorflow:Step 22701, elbo bound per timestep: -8.829109
+INFO:tensorflow:Saving checkpoints for 22718 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.10002
+INFO:tensorflow:Step 22801, elbo bound per timestep: -8.282863
+INFO:tensorflow:Saving checkpoints for 22853 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.1198
+INFO:tensorflow:Step 22901, elbo bound per timestep: -9.148678
+INFO:tensorflow:Saving checkpoints for 22990 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.13348
+INFO:tensorflow:Step 23001, elbo bound per timestep: -8.872953
+INFO:tensorflow:global_step/sec: 1.14157
+INFO:tensorflow:Step 23101, elbo bound per timestep: -8.282209
+INFO:tensorflow:Saving checkpoints for 23127 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.12162
+INFO:tensorflow:Step 23201, elbo bound per timestep: -8.527235
+INFO:tensorflow:Saving checkpoints for 23262 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.13362
+INFO:tensorflow:Step 23301, elbo bound per timestep: -9.262972
+INFO:tensorflow:Saving checkpoints for 23397 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.1158
+INFO:tensorflow:Step 23401, elbo bound per timestep: -8.774211
+INFO:tensorflow:global_step/sec: 1.1304
+INFO:tensorflow:Step 23501, elbo bound per timestep: -8.576649
+INFO:tensorflow:Saving checkpoints for 23533 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.1338
+INFO:tensorflow:Step 23601, elbo bound per timestep: -8.439384
+INFO:tensorflow:Saving checkpoints for 23670 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.14437
+INFO:tensorflow:Step 23701, elbo bound per timestep: -8.128485
+INFO:tensorflow:global_step/sec: 1.13331
+INFO:tensorflow:Step 23801, elbo bound per timestep: -8.382454
+INFO:tensorflow:Saving checkpoints for 23808 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.12296
+INFO:tensorflow:Step 23901, elbo bound per timestep: -8.854253
+INFO:tensorflow:Saving checkpoints for 23943 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.13108
+INFO:tensorflow:Step 24001, elbo bound per timestep: -8.570045
+INFO:tensorflow:Saving checkpoints for 24078 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08301
+INFO:tensorflow:Step 24101, elbo bound per timestep: -8.457897
+INFO:tensorflow:global_step/sec: 1.1497
+INFO:tensorflow:Step 24201, elbo bound per timestep: -8.339512
+INFO:tensorflow:Saving checkpoints for 24213 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09097
+INFO:tensorflow:Step 24301, elbo bound per timestep: -8.849337
+INFO:tensorflow:Saving checkpoints for 24346 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.11628
+INFO:tensorflow:Step 24401, elbo bound per timestep: -8.619576
+INFO:tensorflow:Saving checkpoints for 24480 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.10484
+INFO:tensorflow:Step 24501, elbo bound per timestep: -8.367745
+INFO:tensorflow:global_step/sec: 1.09472
+INFO:tensorflow:Step 24601, elbo bound per timestep: -9.018251
+INFO:tensorflow:Saving checkpoints for 24613 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.15602
+INFO:tensorflow:Step 24701, elbo bound per timestep: -8.096347
+INFO:tensorflow:Saving checkpoints for 24751 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.14067
+INFO:tensorflow:Step 24801, elbo bound per timestep: -8.832470
+INFO:tensorflow:Saving checkpoints for 24885 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.10463
+INFO:tensorflow:Step 24901, elbo bound per timestep: -8.434384
+INFO:tensorflow:global_step/sec: 1.1354
+INFO:tensorflow:Step 25001, elbo bound per timestep: -8.216769
+INFO:tensorflow:Saving checkpoints for 25022 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08015
+INFO:tensorflow:Step 25101, elbo bound per timestep: -7.990005
+INFO:tensorflow:Saving checkpoints for 25152 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09551
+INFO:tensorflow:Step 25201, elbo bound per timestep: -8.952687
+INFO:tensorflow:Saving checkpoints for 25286 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.10848
+INFO:tensorflow:Step 25301, elbo bound per timestep: -8.239552
+INFO:tensorflow:global_step/sec: 1.04682
+INFO:tensorflow:Step 25401, elbo bound per timestep: -8.039480
+INFO:tensorflow:Saving checkpoints for 25409 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.989696
+INFO:tensorflow:Step 25501, elbo bound per timestep: -8.099604
+INFO:tensorflow:Saving checkpoints for 25530 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.971931
+INFO:tensorflow:Step 25601, elbo bound per timestep: -8.498873
+INFO:tensorflow:Saving checkpoints for 25647 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.991713
+INFO:tensorflow:Step 25701, elbo bound per timestep: -8.459547
+INFO:tensorflow:Saving checkpoints for 25769 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.01695
+INFO:tensorflow:Step 25801, elbo bound per timestep: -9.015293
+INFO:tensorflow:Saving checkpoints for 25889 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.999766
+INFO:tensorflow:Step 25901, elbo bound per timestep: -8.097587
+INFO:tensorflow:global_step/sec: 1.02209
+INFO:tensorflow:Step 26001, elbo bound per timestep: -8.423011
+INFO:tensorflow:Saving checkpoints for 26013 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.02434
+INFO:tensorflow:Step 26101, elbo bound per timestep: -8.632562
+INFO:tensorflow:Saving checkpoints for 26138 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.980691
+INFO:tensorflow:Step 26201, elbo bound per timestep: -8.691030
+INFO:tensorflow:Saving checkpoints for 26259 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.07818
+INFO:tensorflow:Step 26301, elbo bound per timestep: -8.546787
+INFO:tensorflow:Saving checkpoints for 26391 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.10743
+INFO:tensorflow:Step 26401, elbo bound per timestep: -8.226696
+INFO:tensorflow:global_step/sec: 1.11023
+INFO:tensorflow:Step 26501, elbo bound per timestep: -8.576067
+INFO:tensorflow:Saving checkpoints for 26523 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08552
+INFO:tensorflow:Step 26601, elbo bound per timestep: -8.603922
+INFO:tensorflow:Saving checkpoints for 26655 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09772
+INFO:tensorflow:Step 26701, elbo bound per timestep: -8.624344
+INFO:tensorflow:Saving checkpoints for 26793 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.13953
+INFO:tensorflow:Step 26801, elbo bound per timestep: -8.116897
+INFO:tensorflow:global_step/sec: 1.13116
+INFO:tensorflow:Step 26901, elbo bound per timestep: -8.467037
+INFO:tensorflow:Saving checkpoints for 26923 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.19478
+INFO:tensorflow:Step 27001, elbo bound per timestep: -8.615040
+INFO:tensorflow:Saving checkpoints for 27100 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62224
+INFO:tensorflow:Step 27101, elbo bound per timestep: -8.608376
+INFO:tensorflow:global_step/sec: 1.71515
+INFO:tensorflow:Step 27201, elbo bound per timestep: -8.356255
+INFO:tensorflow:global_step/sec: 1.67595
+INFO:tensorflow:Step 27301, elbo bound per timestep: -8.422605
+INFO:tensorflow:Saving checkpoints for 27304 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67223
+INFO:tensorflow:Step 27401, elbo bound per timestep: -8.892616
+INFO:tensorflow:global_step/sec: 1.72702
+INFO:tensorflow:Step 27501, elbo bound per timestep: -8.251656
+INFO:tensorflow:Saving checkpoints for 27509 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70659
+INFO:tensorflow:Step 27601, elbo bound per timestep: -8.606906
+INFO:tensorflow:global_step/sec: 1.65534
+INFO:tensorflow:Step 27701, elbo bound per timestep: -8.984371
+INFO:tensorflow:Saving checkpoints for 27712 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70761
+INFO:tensorflow:Step 27801, elbo bound per timestep: -8.996262
+INFO:tensorflow:global_step/sec: 1.69057
+INFO:tensorflow:Step 27901, elbo bound per timestep: -8.344122
+INFO:tensorflow:Saving checkpoints for 27915 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68929
+INFO:tensorflow:Step 28001, elbo bound per timestep: -8.966565
+INFO:tensorflow:global_step/sec: 1.67624
+INFO:tensorflow:Step 28101, elbo bound per timestep: -8.490991
+INFO:tensorflow:Saving checkpoints for 28119 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65554
+INFO:tensorflow:Step 28201, elbo bound per timestep: -8.498633
+INFO:tensorflow:global_step/sec: 1.68329
+INFO:tensorflow:Step 28301, elbo bound per timestep: -9.206329
+INFO:tensorflow:Saving checkpoints for 28321 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64429
+INFO:tensorflow:Step 28401, elbo bound per timestep: -8.738167
+INFO:tensorflow:global_step/sec: 1.7105
+INFO:tensorflow:Step 28501, elbo bound per timestep: -8.269152
+INFO:tensorflow:Saving checkpoints for 28523 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65931
+INFO:tensorflow:Step 28601, elbo bound per timestep: -9.358957
+INFO:tensorflow:global_step/sec: 1.68425
+INFO:tensorflow:Step 28701, elbo bound per timestep: -9.027664
+INFO:tensorflow:Saving checkpoints for 28723 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69169
+INFO:tensorflow:Step 28801, elbo bound per timestep: -8.657740
+INFO:tensorflow:global_step/sec: 1.66773
+INFO:tensorflow:Step 28901, elbo bound per timestep: -8.602016
+INFO:tensorflow:Saving checkpoints for 28927 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71032
+INFO:tensorflow:Step 29001, elbo bound per timestep: -7.900628
+INFO:tensorflow:global_step/sec: 1.65403
+INFO:tensorflow:Step 29101, elbo bound per timestep: -8.946220
+INFO:tensorflow:Saving checkpoints for 29128 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70378
+INFO:tensorflow:Step 29201, elbo bound per timestep: -8.655353
+INFO:tensorflow:global_step/sec: 1.67594
+INFO:tensorflow:Step 29301, elbo bound per timestep: -7.673703
+INFO:tensorflow:Saving checkpoints for 29330 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69473
+INFO:tensorflow:Step 29401, elbo bound per timestep: -9.226818
+INFO:tensorflow:global_step/sec: 1.67965
+INFO:tensorflow:Step 29501, elbo bound per timestep: -8.474149
+INFO:tensorflow:Saving checkpoints for 29533 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67471
+INFO:tensorflow:Step 29601, elbo bound per timestep: -8.423270
+INFO:tensorflow:global_step/sec: 1.70525
+INFO:tensorflow:Step 29701, elbo bound per timestep: -8.401659
+INFO:tensorflow:Saving checkpoints for 29735 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65604
+INFO:tensorflow:Step 29801, elbo bound per timestep: -8.708965
+INFO:tensorflow:global_step/sec: 1.69754
+INFO:tensorflow:Step 29901, elbo bound per timestep: -7.863963
+INFO:tensorflow:Saving checkpoints for 29939 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6612
+INFO:tensorflow:Step 30001, elbo bound per timestep: -8.472260
+INFO:tensorflow:global_step/sec: 1.7107
+INFO:tensorflow:Step 30101, elbo bound per timestep: -8.668365
+INFO:tensorflow:Saving checkpoints for 30142 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67614
+INFO:tensorflow:Step 30201, elbo bound per timestep: -8.651731
+INFO:tensorflow:global_step/sec: 1.68699
+INFO:tensorflow:Step 30301, elbo bound per timestep: -7.957620
+INFO:tensorflow:Saving checkpoints for 30345 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70673
+INFO:tensorflow:Step 30401, elbo bound per timestep: -8.787497
+INFO:tensorflow:global_step/sec: 1.66116
+INFO:tensorflow:Step 30501, elbo bound per timestep: -8.665247
+INFO:tensorflow:Saving checkpoints for 30547 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70367
+INFO:tensorflow:Step 30601, elbo bound per timestep: -9.026415
+INFO:tensorflow:global_step/sec: 1.64911
+INFO:tensorflow:Step 30701, elbo bound per timestep: -8.073945
+INFO:tensorflow:Saving checkpoints for 30749 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70231
+INFO:tensorflow:Step 30801, elbo bound per timestep: -8.624219
+INFO:tensorflow:global_step/sec: 1.66914
+INFO:tensorflow:Step 30901, elbo bound per timestep: -8.573531
+INFO:tensorflow:Saving checkpoints for 30951 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69606
+INFO:tensorflow:Step 31001, elbo bound per timestep: -7.929954
+INFO:tensorflow:global_step/sec: 1.70438
+INFO:tensorflow:Step 31101, elbo bound per timestep: -8.519043
+INFO:tensorflow:Saving checkpoints for 31157 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69393
+INFO:tensorflow:Step 31201, elbo bound per timestep: -8.327262
+INFO:tensorflow:global_step/sec: 1.68448
+INFO:tensorflow:Step 31301, elbo bound per timestep: -9.021045
+INFO:tensorflow:Saving checkpoints for 31361 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69884
+INFO:tensorflow:Step 31401, elbo bound per timestep: -8.658720
+INFO:tensorflow:global_step/sec: 1.72669
+INFO:tensorflow:Step 31501, elbo bound per timestep: -8.819836
+INFO:tensorflow:Saving checkpoints for 31566 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65167
+INFO:tensorflow:Step 31601, elbo bound per timestep: -8.481224
+INFO:tensorflow:global_step/sec: 1.69482
+INFO:tensorflow:Step 31701, elbo bound per timestep: -9.274544
+INFO:tensorflow:Saving checkpoints for 31769 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66428
+INFO:tensorflow:Step 31801, elbo bound per timestep: -8.266378
+INFO:tensorflow:global_step/sec: 1.70661
+INFO:tensorflow:Step 31901, elbo bound per timestep: -8.167984
+INFO:tensorflow:Saving checkpoints for 31973 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67599
+INFO:tensorflow:Step 32001, elbo bound per timestep: -8.362071
+INFO:tensorflow:global_step/sec: 1.67007
+INFO:tensorflow:Step 32101, elbo bound per timestep: -8.506236
+INFO:tensorflow:Saving checkpoints for 32175 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71376
+INFO:tensorflow:Step 32201, elbo bound per timestep: -8.970124
+INFO:tensorflow:global_step/sec: 1.66206
+INFO:tensorflow:Step 32301, elbo bound per timestep: -8.332502
+INFO:tensorflow:Saving checkpoints for 32378 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69056
+INFO:tensorflow:Step 32401, elbo bound per timestep: -7.927346
+INFO:tensorflow:global_step/sec: 1.71552
+INFO:tensorflow:Step 32501, elbo bound per timestep: -8.748201
+INFO:tensorflow:Saving checkpoints for 32582 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6808
+INFO:tensorflow:Step 32601, elbo bound per timestep: -8.624764
+INFO:tensorflow:global_step/sec: 1.7091
+INFO:tensorflow:Step 32701, elbo bound per timestep: -8.373684
+INFO:tensorflow:Saving checkpoints for 32785 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65388
+INFO:tensorflow:Step 32801, elbo bound per timestep: -8.701841
+INFO:tensorflow:global_step/sec: 1.71867
+INFO:tensorflow:Step 32901, elbo bound per timestep: -8.630997
+INFO:tensorflow:Saving checkpoints for 32989 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64911
+INFO:tensorflow:Step 33001, elbo bound per timestep: -8.822187
+INFO:tensorflow:global_step/sec: 1.72667
+INFO:tensorflow:Step 33101, elbo bound per timestep: -8.458119
+INFO:tensorflow:Saving checkpoints for 33193 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6716
+INFO:tensorflow:Step 33201, elbo bound per timestep: -8.649969
+INFO:tensorflow:global_step/sec: 1.68248
+INFO:tensorflow:Step 33301, elbo bound per timestep: -8.283146
+INFO:tensorflow:Saving checkpoints for 33396 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68061
+INFO:tensorflow:Step 33401, elbo bound per timestep: -8.987832
+INFO:tensorflow:global_step/sec: 1.68896
+INFO:tensorflow:Step 33501, elbo bound per timestep: -8.051688
+INFO:tensorflow:Saving checkpoints for 33600 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72979
+INFO:tensorflow:Step 33601, elbo bound per timestep: -8.259074
+INFO:tensorflow:global_step/sec: 1.66216
+INFO:tensorflow:Step 33701, elbo bound per timestep: -8.447027
+INFO:tensorflow:global_step/sec: 1.72423
+INFO:tensorflow:Step 33801, elbo bound per timestep: -8.426593
+INFO:tensorflow:Saving checkpoints for 33803 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70705
+INFO:tensorflow:Step 33901, elbo bound per timestep: -8.052145
+INFO:tensorflow:global_step/sec: 1.68748
+INFO:tensorflow:Step 34001, elbo bound per timestep: -8.684311
+INFO:tensorflow:Saving checkpoints for 34009 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72211
+INFO:tensorflow:Step 34101, elbo bound per timestep: -8.697100
+INFO:tensorflow:global_step/sec: 1.67618
+INFO:tensorflow:Step 34201, elbo bound per timestep: -7.839048
+INFO:tensorflow:Saving checkpoints for 34213 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72408
+INFO:tensorflow:Step 34301, elbo bound per timestep: -8.776518
+INFO:tensorflow:global_step/sec: 1.66546
+INFO:tensorflow:Step 34401, elbo bound per timestep: -8.659153
+INFO:tensorflow:Saving checkpoints for 34416 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71647
+INFO:tensorflow:Step 34501, elbo bound per timestep: -8.668819
+INFO:tensorflow:global_step/sec: 1.70467
+INFO:tensorflow:Step 34601, elbo bound per timestep: -8.050453
+INFO:tensorflow:Saving checkpoints for 34621 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67908
+INFO:tensorflow:Step 34701, elbo bound per timestep: -7.893610
+INFO:tensorflow:global_step/sec: 1.73037
+INFO:tensorflow:Step 34801, elbo bound per timestep: -8.716534
+INFO:tensorflow:Saving checkpoints for 34826 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66156
+INFO:tensorflow:Step 34901, elbo bound per timestep: -8.969498
+INFO:tensorflow:global_step/sec: 1.73932
+INFO:tensorflow:Step 35001, elbo bound per timestep: -8.228534
+INFO:tensorflow:Saving checkpoints for 35033 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72466
+INFO:tensorflow:Step 35101, elbo bound per timestep: -9.115644
+INFO:tensorflow:global_step/sec: 1.6979
+INFO:tensorflow:Step 35201, elbo bound per timestep: -7.903092
+INFO:tensorflow:Saving checkpoints for 35236 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67938
+INFO:tensorflow:Step 35301, elbo bound per timestep: -8.631571
+INFO:tensorflow:global_step/sec: 1.70531
+INFO:tensorflow:Step 35401, elbo bound per timestep: -8.053856
+INFO:tensorflow:Saving checkpoints for 35440 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65308
+INFO:tensorflow:Step 35501, elbo bound per timestep: -8.990292
+INFO:tensorflow:global_step/sec: 1.71959
+INFO:tensorflow:Step 35601, elbo bound per timestep: -8.624763
+INFO:tensorflow:Saving checkpoints for 35642 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6767
+INFO:tensorflow:Step 35701, elbo bound per timestep: -8.408575
+INFO:tensorflow:global_step/sec: 1.68084
+INFO:tensorflow:Step 35801, elbo bound per timestep: -8.439047
+INFO:tensorflow:Saving checkpoints for 35845 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71694
+INFO:tensorflow:Step 35901, elbo bound per timestep: -8.369160
+INFO:tensorflow:global_step/sec: 1.66455
+INFO:tensorflow:Step 36001, elbo bound per timestep: -8.906128
+INFO:tensorflow:Saving checkpoints for 36048 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72163
+INFO:tensorflow:Step 36101, elbo bound per timestep: -8.414951
+INFO:tensorflow:global_step/sec: 1.66483
+INFO:tensorflow:Step 36201, elbo bound per timestep: -8.663784
+INFO:tensorflow:Saving checkpoints for 36251 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68491
+INFO:tensorflow:Step 36301, elbo bound per timestep: -8.537834
+INFO:tensorflow:global_step/sec: 1.71462
+INFO:tensorflow:Step 36401, elbo bound per timestep: -8.427091
+INFO:tensorflow:Saving checkpoints for 36454 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70308
+INFO:tensorflow:Step 36501, elbo bound per timestep: -8.011749
+INFO:tensorflow:global_step/sec: 1.69671
+INFO:tensorflow:Step 36601, elbo bound per timestep: -8.380842
+INFO:tensorflow:Saving checkpoints for 36659 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66677
+INFO:tensorflow:Step 36701, elbo bound per timestep: -7.932940
+INFO:tensorflow:global_step/sec: 1.73613
+INFO:tensorflow:Step 36801, elbo bound per timestep: -8.959426
+INFO:tensorflow:Saving checkpoints for 36864 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66539
+INFO:tensorflow:Step 36901, elbo bound per timestep: -8.406017
+INFO:tensorflow:global_step/sec: 1.73156
+INFO:tensorflow:Step 37001, elbo bound per timestep: -8.352806
+INFO:tensorflow:Saving checkpoints for 37069 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67385
+INFO:tensorflow:Step 37101, elbo bound per timestep: -8.201715
+INFO:tensorflow:global_step/sec: 1.69521
+INFO:tensorflow:Step 37201, elbo bound per timestep: -8.564994
+INFO:tensorflow:Saving checkpoints for 37273 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70468
+INFO:tensorflow:Step 37301, elbo bound per timestep: -8.381655
+INFO:tensorflow:global_step/sec: 1.66388
+INFO:tensorflow:Step 37401, elbo bound per timestep: -8.239744
+INFO:tensorflow:Saving checkpoints for 37476 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7247
+INFO:tensorflow:Step 37501, elbo bound per timestep: -8.636757
+INFO:tensorflow:global_step/sec: 1.67432
+INFO:tensorflow:Step 37601, elbo bound per timestep: -8.585689
+INFO:tensorflow:Saving checkpoints for 37681 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7239
+INFO:tensorflow:Step 37701, elbo bound per timestep: -7.946133
+INFO:tensorflow:global_step/sec: 1.69569
+INFO:tensorflow:Step 37801, elbo bound per timestep: -8.458455
+INFO:tensorflow:Saving checkpoints for 37886 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69059
+INFO:tensorflow:Step 37901, elbo bound per timestep: -8.466501
+INFO:tensorflow:global_step/sec: 1.71232
+INFO:tensorflow:Step 38001, elbo bound per timestep: -8.595134
+INFO:tensorflow:Saving checkpoints for 38090 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65868
+INFO:tensorflow:Step 38101, elbo bound per timestep: -8.586874
+INFO:tensorflow:global_step/sec: 1.73521
+INFO:tensorflow:Step 38201, elbo bound per timestep: -8.040954
+INFO:tensorflow:Saving checkpoints for 38295 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67425
+INFO:tensorflow:Step 38301, elbo bound per timestep: -8.639807
+INFO:tensorflow:global_step/sec: 1.72401
+INFO:tensorflow:Step 38401, elbo bound per timestep: -7.876641
+INFO:tensorflow:global_step/sec: 1.72278
+INFO:tensorflow:Step 38501, elbo bound per timestep: -8.028652
+INFO:tensorflow:Saving checkpoints for 38502 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67465
+INFO:tensorflow:Step 38601, elbo bound per timestep: -8.498028
+INFO:tensorflow:global_step/sec: 1.78047
+INFO:tensorflow:Step 38701, elbo bound per timestep: -8.401279
+INFO:tensorflow:Saving checkpoints for 38710 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74024
+INFO:tensorflow:Step 38801, elbo bound per timestep: -8.973542
+INFO:tensorflow:global_step/sec: 1.67421
+INFO:tensorflow:Step 38901, elbo bound per timestep: -7.981693
+INFO:tensorflow:Saving checkpoints for 38916 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73793
+INFO:tensorflow:Step 39001, elbo bound per timestep: -8.603252
+INFO:tensorflow:global_step/sec: 1.7451
+INFO:tensorflow:Step 39101, elbo bound per timestep: -8.757172
+INFO:tensorflow:Saving checkpoints for 39126 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68616
+INFO:tensorflow:Step 39201, elbo bound per timestep: -8.447197
+INFO:tensorflow:global_step/sec: 1.70598
+INFO:tensorflow:Step 39301, elbo bound per timestep: -8.927044
+INFO:tensorflow:Saving checkpoints for 39330 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69697
+INFO:tensorflow:Step 39401, elbo bound per timestep: -8.984715
+INFO:tensorflow:global_step/sec: 1.66599
+INFO:tensorflow:Step 39501, elbo bound per timestep: -8.278568
+INFO:tensorflow:Saving checkpoints for 39534 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73517
+INFO:tensorflow:Step 39601, elbo bound per timestep: -8.755007
+INFO:tensorflow:global_step/sec: 1.6768
+INFO:tensorflow:Step 39701, elbo bound per timestep: -8.491666
+INFO:tensorflow:Saving checkpoints for 39739 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72863
+INFO:tensorflow:Step 39801, elbo bound per timestep: -8.109304
+INFO:tensorflow:global_step/sec: 1.7132
+INFO:tensorflow:Step 39901, elbo bound per timestep: -8.394539
+INFO:tensorflow:Saving checkpoints for 39944 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68714
+INFO:tensorflow:Step 40001, elbo bound per timestep: -8.214679
+INFO:tensorflow:global_step/sec: 1.73916
+INFO:tensorflow:Step 40101, elbo bound per timestep: -8.196771
+INFO:tensorflow:Saving checkpoints for 40151 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67082
+INFO:tensorflow:Step 40201, elbo bound per timestep: -8.659863
+INFO:tensorflow:global_step/sec: 1.74189
+INFO:tensorflow:Step 40301, elbo bound per timestep: -8.523485
+INFO:tensorflow:Saving checkpoints for 40357 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67583
+INFO:tensorflow:Step 40401, elbo bound per timestep: -8.660690
+INFO:tensorflow:global_step/sec: 1.68202
+INFO:tensorflow:Step 40501, elbo bound per timestep: -8.734902
+INFO:tensorflow:Saving checkpoints for 40561 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71775
+INFO:tensorflow:Step 40601, elbo bound per timestep: -8.465012
+INFO:tensorflow:global_step/sec: 1.67083
+INFO:tensorflow:Step 40701, elbo bound per timestep: -8.478954
+INFO:tensorflow:Saving checkpoints for 40765 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73241
+INFO:tensorflow:Step 40801, elbo bound per timestep: -8.126172
+INFO:tensorflow:global_step/sec: 1.67035
+INFO:tensorflow:Step 40901, elbo bound per timestep: -8.014340
+INFO:tensorflow:Saving checkpoints for 40969 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71992
+INFO:tensorflow:Step 41001, elbo bound per timestep: -9.089634
+INFO:tensorflow:global_step/sec: 1.69629
+INFO:tensorflow:Step 41101, elbo bound per timestep: -8.030729
+INFO:tensorflow:Saving checkpoints for 41174 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68614
+INFO:tensorflow:Step 41201, elbo bound per timestep: -7.952650
+INFO:tensorflow:global_step/sec: 1.71907
+INFO:tensorflow:Step 41301, elbo bound per timestep: -8.048754
+INFO:tensorflow:Saving checkpoints for 41377 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66374
+INFO:tensorflow:Step 41401, elbo bound per timestep: -7.919455
+INFO:tensorflow:global_step/sec: 1.73716
+INFO:tensorflow:Step 41501, elbo bound per timestep: -8.798050
+INFO:tensorflow:Saving checkpoints for 41583 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66624
+INFO:tensorflow:Step 41601, elbo bound per timestep: -8.943487
+INFO:tensorflow:global_step/sec: 1.73126
+INFO:tensorflow:Step 41701, elbo bound per timestep: -8.766737
+INFO:tensorflow:Saving checkpoints for 41788 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68169
+INFO:tensorflow:Step 41801, elbo bound per timestep: -8.431320
+INFO:tensorflow:global_step/sec: 1.69083
+INFO:tensorflow:Step 41901, elbo bound per timestep: -8.318198
+INFO:tensorflow:Saving checkpoints for 41993 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71693
+INFO:tensorflow:Step 42001, elbo bound per timestep: -8.776328
+INFO:tensorflow:global_step/sec: 1.6722
+INFO:tensorflow:Step 42101, elbo bound per timestep: -9.237154
+INFO:tensorflow:Saving checkpoints for 42197 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72777
+INFO:tensorflow:Step 42201, elbo bound per timestep: -7.910374
+INFO:tensorflow:global_step/sec: 1.6726
+INFO:tensorflow:Step 42301, elbo bound per timestep: -8.387797
+INFO:tensorflow:global_step/sec: 1.75379
+INFO:tensorflow:Step 42401, elbo bound per timestep: -8.296524
+INFO:tensorflow:Saving checkpoints for 42403 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68079
+INFO:tensorflow:Step 42501, elbo bound per timestep: -9.198391
+INFO:tensorflow:global_step/sec: 1.70987
+INFO:tensorflow:Step 42601, elbo bound per timestep: -8.536879
+INFO:tensorflow:Saving checkpoints for 42606 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74544
+INFO:tensorflow:Step 42701, elbo bound per timestep: -8.416113
+INFO:tensorflow:global_step/sec: 1.72704
+INFO:tensorflow:Step 42801, elbo bound per timestep: -9.354616
+INFO:tensorflow:Saving checkpoints for 42815 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69146
+INFO:tensorflow:Step 42901, elbo bound per timestep: -8.878849
+INFO:tensorflow:global_step/sec: 1.70878
+INFO:tensorflow:Step 43001, elbo bound per timestep: -8.077396
+INFO:tensorflow:Saving checkpoints for 43019 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72212
+INFO:tensorflow:Step 43101, elbo bound per timestep: -8.269455
+INFO:tensorflow:global_step/sec: 1.69685
+INFO:tensorflow:Step 43201, elbo bound per timestep: -8.537114
+INFO:tensorflow:Saving checkpoints for 43224 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72143
+INFO:tensorflow:Step 43301, elbo bound per timestep: -8.907017
+INFO:tensorflow:global_step/sec: 1.69446
+INFO:tensorflow:Step 43401, elbo bound per timestep: -8.758425
+INFO:tensorflow:Saving checkpoints for 43430 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.75135
+INFO:tensorflow:Step 43501, elbo bound per timestep: -8.331130
+INFO:tensorflow:global_step/sec: 1.73138
+INFO:tensorflow:Step 43601, elbo bound per timestep: -7.821979
+INFO:tensorflow:Saving checkpoints for 43638 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6832
+INFO:tensorflow:Step 43701, elbo bound per timestep: -8.222091
+INFO:tensorflow:global_step/sec: 1.73831
+INFO:tensorflow:Step 43801, elbo bound per timestep: -8.604929
+INFO:tensorflow:Saving checkpoints for 43844 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67437
+INFO:tensorflow:Step 43901, elbo bound per timestep: -8.626993
+INFO:tensorflow:global_step/sec: 1.73852
+INFO:tensorflow:Step 44001, elbo bound per timestep: -9.049463
+INFO:tensorflow:Saving checkpoints for 44050 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69769
+INFO:tensorflow:Step 44101, elbo bound per timestep: -8.526039
+INFO:tensorflow:global_step/sec: 1.70027
+INFO:tensorflow:Step 44201, elbo bound per timestep: -8.761925
+INFO:tensorflow:Saving checkpoints for 44255 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70466
+INFO:tensorflow:Step 44301, elbo bound per timestep: -8.633036
+INFO:tensorflow:global_step/sec: 1.68295
+INFO:tensorflow:Step 44401, elbo bound per timestep: -7.982127
+INFO:tensorflow:Saving checkpoints for 44460 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72711
+INFO:tensorflow:Step 44501, elbo bound per timestep: -8.444279
+INFO:tensorflow:global_step/sec: 1.66415
+INFO:tensorflow:Step 44601, elbo bound per timestep: -8.510942
+INFO:tensorflow:Saving checkpoints for 44664 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71814
+INFO:tensorflow:Step 44701, elbo bound per timestep: -8.261531
+INFO:tensorflow:global_step/sec: 1.68841
+INFO:tensorflow:Step 44801, elbo bound per timestep: -8.872501
+INFO:tensorflow:Saving checkpoints for 44868 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68815
+INFO:tensorflow:Step 44901, elbo bound per timestep: -8.795282
+INFO:tensorflow:global_step/sec: 1.72479
+INFO:tensorflow:Step 45001, elbo bound per timestep: -8.521267
+INFO:tensorflow:Saving checkpoints for 45072 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66287
+INFO:tensorflow:Step 45101, elbo bound per timestep: -8.834684
+INFO:tensorflow:global_step/sec: 1.70247
+INFO:tensorflow:Step 45201, elbo bound per timestep: -8.821531
+INFO:tensorflow:Saving checkpoints for 45275 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.64456
+INFO:tensorflow:Step 45301, elbo bound per timestep: -8.472480
+INFO:tensorflow:global_step/sec: 1.72475
+INFO:tensorflow:Step 45401, elbo bound per timestep: -7.749646
+INFO:tensorflow:Saving checkpoints for 45480 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66394
+INFO:tensorflow:Step 45501, elbo bound per timestep: -8.262379
+INFO:tensorflow:global_step/sec: 1.72046
+INFO:tensorflow:Step 45601, elbo bound per timestep: -8.800387
+INFO:tensorflow:Saving checkpoints for 45684 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68242
+INFO:tensorflow:Step 45701, elbo bound per timestep: -8.438731
+INFO:tensorflow:global_step/sec: 1.69155
+INFO:tensorflow:Step 45801, elbo bound per timestep: -8.567863
+INFO:tensorflow:Saving checkpoints for 45889 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72407
+INFO:tensorflow:Step 45901, elbo bound per timestep: -8.668490
+INFO:tensorflow:global_step/sec: 1.70012
+INFO:tensorflow:Step 46001, elbo bound per timestep: -8.284703
+INFO:tensorflow:Saving checkpoints for 46095 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7174
+INFO:tensorflow:Step 46101, elbo bound per timestep: -8.093330
+INFO:tensorflow:global_step/sec: 1.69889
+INFO:tensorflow:Step 46201, elbo bound per timestep: -8.447000
+INFO:tensorflow:Saving checkpoints for 46299 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69782
+INFO:tensorflow:Step 46301, elbo bound per timestep: -8.198179
+INFO:tensorflow:global_step/sec: 1.73799
+INFO:tensorflow:Step 46401, elbo bound per timestep: -8.601707
+INFO:tensorflow:global_step/sec: 1.67569
+INFO:tensorflow:Step 46501, elbo bound per timestep: -8.629030
+INFO:tensorflow:Saving checkpoints for 46504 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72033
+INFO:tensorflow:Step 46601, elbo bound per timestep: -8.109681
+INFO:tensorflow:global_step/sec: 1.74604
+INFO:tensorflow:Step 46701, elbo bound per timestep: -8.575649
+INFO:tensorflow:Saving checkpoints for 46712 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70018
+INFO:tensorflow:Step 46801, elbo bound per timestep: -8.965883
+INFO:tensorflow:global_step/sec: 1.70834
+INFO:tensorflow:Step 46901, elbo bound per timestep: -8.569189
+INFO:tensorflow:Saving checkpoints for 46916 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69738
+INFO:tensorflow:Step 47001, elbo bound per timestep: -8.951629
+INFO:tensorflow:global_step/sec: 1.69788
+INFO:tensorflow:Step 47101, elbo bound per timestep: -8.352378
+INFO:tensorflow:Saving checkpoints for 47120 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70374
+INFO:tensorflow:Step 47201, elbo bound per timestep: -8.105388
+INFO:tensorflow:global_step/sec: 1.71904
+INFO:tensorflow:Step 47301, elbo bound per timestep: -8.024902
+INFO:tensorflow:Saving checkpoints for 47325 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68205
+INFO:tensorflow:Step 47401, elbo bound per timestep: -8.383614
+INFO:tensorflow:global_step/sec: 1.74358
+INFO:tensorflow:Step 47501, elbo bound per timestep: -8.258997
+INFO:tensorflow:Saving checkpoints for 47532 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67452
+INFO:tensorflow:Step 47601, elbo bound per timestep: -9.103075
+INFO:tensorflow:global_step/sec: 1.74517
+INFO:tensorflow:Step 47701, elbo bound per timestep: -8.598583
+INFO:tensorflow:Saving checkpoints for 47739 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69205
+INFO:tensorflow:Step 47801, elbo bound per timestep: -8.079250
+INFO:tensorflow:global_step/sec: 1.70927
+INFO:tensorflow:Step 47901, elbo bound per timestep: -8.463579
+INFO:tensorflow:Saving checkpoints for 47944 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71989
+INFO:tensorflow:Step 48001, elbo bound per timestep: -8.577408
+INFO:tensorflow:global_step/sec: 1.70554
+INFO:tensorflow:Step 48101, elbo bound per timestep: -7.977374
+INFO:tensorflow:Saving checkpoints for 48150 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73426
+INFO:tensorflow:Step 48201, elbo bound per timestep: -9.022417
+INFO:tensorflow:global_step/sec: 1.68957
+INFO:tensorflow:Step 48301, elbo bound per timestep: -8.524570
+INFO:tensorflow:Saving checkpoints for 48356 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72142
+INFO:tensorflow:Step 48401, elbo bound per timestep: -7.903467
+INFO:tensorflow:global_step/sec: 1.70025
+INFO:tensorflow:Step 48501, elbo bound per timestep: -9.200371
+INFO:tensorflow:Saving checkpoints for 48560 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69802
+INFO:tensorflow:Step 48601, elbo bound per timestep: -8.220617
+INFO:tensorflow:global_step/sec: 1.74901
+INFO:tensorflow:Step 48701, elbo bound per timestep: -8.348556
+INFO:tensorflow:Saving checkpoints for 48768 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67287
+INFO:tensorflow:Step 48801, elbo bound per timestep: -8.955219
+INFO:tensorflow:global_step/sec: 1.77508
+INFO:tensorflow:Step 48901, elbo bound per timestep: -8.148653
+INFO:tensorflow:Saving checkpoints for 48976 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67857
+INFO:tensorflow:Step 49001, elbo bound per timestep: -8.595195
+INFO:tensorflow:global_step/sec: 1.73219
+INFO:tensorflow:Step 49101, elbo bound per timestep: -8.560492
+INFO:tensorflow:Saving checkpoints for 49182 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68813
+INFO:tensorflow:Step 49201, elbo bound per timestep: -8.808493
+INFO:tensorflow:global_step/sec: 1.69976
+INFO:tensorflow:Step 49301, elbo bound per timestep: -8.523015
+INFO:tensorflow:Saving checkpoints for 49384 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69639
+INFO:tensorflow:Step 49401, elbo bound per timestep: -8.098125
+INFO:tensorflow:global_step/sec: 1.65629
+INFO:tensorflow:Step 49501, elbo bound per timestep: -8.488228
+INFO:tensorflow:Saving checkpoints for 49587 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72568
+INFO:tensorflow:Step 49601, elbo bound per timestep: -8.622058
+INFO:tensorflow:global_step/sec: 1.69241
+INFO:tensorflow:Step 49701, elbo bound per timestep: -8.667517
+INFO:tensorflow:Saving checkpoints for 49792 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71409
+INFO:tensorflow:Step 49801, elbo bound per timestep: -8.382205
+INFO:tensorflow:global_step/sec: 1.73534
+INFO:tensorflow:Step 49901, elbo bound per timestep: -8.347563
+INFO:tensorflow:Saving checkpoints for 49996 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62873
+INFO:tensorflow:Step 50001, elbo bound per timestep: -8.404784
+INFO:tensorflow:global_step/sec: 1.72048
+INFO:tensorflow:Step 50101, elbo bound per timestep: -8.387960
+INFO:tensorflow:global_step/sec: 1.6761
+INFO:tensorflow:Saving checkpoints for 50201 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 50201, elbo bound per timestep: -8.275105
+INFO:tensorflow:global_step/sec: 1.71598
+INFO:tensorflow:Step 50301, elbo bound per timestep: -8.230684
+INFO:tensorflow:global_step/sec: 1.75113
+INFO:tensorflow:Step 50401, elbo bound per timestep: -8.974606
+INFO:tensorflow:Saving checkpoints for 50409 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73121
+INFO:tensorflow:Step 50501, elbo bound per timestep: -8.538022
+INFO:tensorflow:global_step/sec: 1.64994
+INFO:tensorflow:Step 50601, elbo bound per timestep: -8.553865
+INFO:tensorflow:Saving checkpoints for 50613 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71452
+INFO:tensorflow:Step 50701, elbo bound per timestep: -8.262428
+INFO:tensorflow:global_step/sec: 1.7331
+INFO:tensorflow:Step 50801, elbo bound per timestep: -7.870835
+INFO:tensorflow:Saving checkpoints for 50820 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6805
+INFO:tensorflow:Step 50901, elbo bound per timestep: -8.356674
+INFO:tensorflow:global_step/sec: 1.7431
+INFO:tensorflow:Step 51001, elbo bound per timestep: -8.777152
+INFO:tensorflow:Saving checkpoints for 51026 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65646
+INFO:tensorflow:Step 51101, elbo bound per timestep: -9.078768
+INFO:tensorflow:global_step/sec: 1.74233
+INFO:tensorflow:Step 51201, elbo bound per timestep: -8.520020
+INFO:tensorflow:Saving checkpoints for 51232 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69186
+INFO:tensorflow:Step 51301, elbo bound per timestep: -8.422272
+INFO:tensorflow:global_step/sec: 1.71838
+INFO:tensorflow:Step 51401, elbo bound per timestep: -8.612022
+INFO:tensorflow:Saving checkpoints for 51437 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73042
+INFO:tensorflow:Step 51501, elbo bound per timestep: -8.592239
+INFO:tensorflow:global_step/sec: 1.67882
+INFO:tensorflow:Step 51601, elbo bound per timestep: -8.518389
+INFO:tensorflow:Saving checkpoints for 51643 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73474
+INFO:tensorflow:Step 51701, elbo bound per timestep: -8.209145
+INFO:tensorflow:global_step/sec: 1.66968
+INFO:tensorflow:Step 51801, elbo bound per timestep: -7.866671
+INFO:tensorflow:Saving checkpoints for 51848 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72593
+INFO:tensorflow:Step 51901, elbo bound per timestep: -8.513302
+INFO:tensorflow:global_step/sec: 1.69044
+INFO:tensorflow:Step 52001, elbo bound per timestep: -7.859192
+INFO:tensorflow:Saving checkpoints for 52053 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71643
+INFO:tensorflow:Step 52101, elbo bound per timestep: -8.070008
+INFO:tensorflow:global_step/sec: 1.71576
+INFO:tensorflow:Step 52201, elbo bound per timestep: -8.494493
+INFO:tensorflow:Saving checkpoints for 52259 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68904
+INFO:tensorflow:Step 52301, elbo bound per timestep: -8.370432
+INFO:tensorflow:global_step/sec: 1.71222
+INFO:tensorflow:Step 52401, elbo bound per timestep: -8.433723
+INFO:tensorflow:Saving checkpoints for 52465 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67203
+INFO:tensorflow:Step 52501, elbo bound per timestep: -8.397183
+INFO:tensorflow:global_step/sec: 1.71469
+INFO:tensorflow:Step 52601, elbo bound per timestep: -8.016312
+INFO:tensorflow:Saving checkpoints for 52671 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72228
+INFO:tensorflow:Step 52701, elbo bound per timestep: -8.581934
+INFO:tensorflow:global_step/sec: 1.69712
+INFO:tensorflow:Step 52801, elbo bound per timestep: -8.000679
+INFO:tensorflow:Saving checkpoints for 52877 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72457
+INFO:tensorflow:Step 52901, elbo bound per timestep: -8.366890
+INFO:tensorflow:global_step/sec: 1.66922
+INFO:tensorflow:Step 53001, elbo bound per timestep: -8.004273
+INFO:tensorflow:Saving checkpoints for 53081 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73116
+INFO:tensorflow:Step 53101, elbo bound per timestep: -8.251460
+INFO:tensorflow:global_step/sec: 1.67008
+INFO:tensorflow:Step 53201, elbo bound per timestep: -8.360758
+INFO:tensorflow:Saving checkpoints for 53286 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74607
+INFO:tensorflow:Step 53301, elbo bound per timestep: -8.495736
+INFO:tensorflow:global_step/sec: 1.70045
+INFO:tensorflow:Step 53401, elbo bound per timestep: -8.705287
+INFO:tensorflow:Saving checkpoints for 53490 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70287
+INFO:tensorflow:Step 53501, elbo bound per timestep: -8.378274
+INFO:tensorflow:global_step/sec: 1.73592
+INFO:tensorflow:Step 53601, elbo bound per timestep: -8.671364
+INFO:tensorflow:Saving checkpoints for 53694 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66612
+INFO:tensorflow:Step 53701, elbo bound per timestep: -8.513184
+INFO:tensorflow:global_step/sec: 1.74289
+INFO:tensorflow:Step 53801, elbo bound per timestep: -8.846138
+INFO:tensorflow:Saving checkpoints for 53900 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67664
+INFO:tensorflow:Step 53901, elbo bound per timestep: -8.043552
+INFO:tensorflow:global_step/sec: 1.74577
+INFO:tensorflow:Step 54001, elbo bound per timestep: -9.018101
+INFO:tensorflow:global_step/sec: 1.7471
+INFO:tensorflow:Step 54101, elbo bound per timestep: -8.352846
+INFO:tensorflow:Saving checkpoints for 54110 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65785
+INFO:tensorflow:Step 54201, elbo bound per timestep: -8.798265
+INFO:tensorflow:global_step/sec: 1.73929
+INFO:tensorflow:Step 54301, elbo bound per timestep: -8.122141
+INFO:tensorflow:Saving checkpoints for 54315 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73643
+INFO:tensorflow:Step 54401, elbo bound per timestep: -8.370353
+INFO:tensorflow:global_step/sec: 1.69086
+INFO:tensorflow:Step 54501, elbo bound per timestep: -8.527761
+INFO:tensorflow:Saving checkpoints for 54522 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7161
+INFO:tensorflow:Step 54601, elbo bound per timestep: -8.186273
+INFO:tensorflow:global_step/sec: 1.75848
+INFO:tensorflow:Step 54701, elbo bound per timestep: -8.561589
+INFO:tensorflow:Saving checkpoints for 54729 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66705
+INFO:tensorflow:Step 54801, elbo bound per timestep: -8.636099
+INFO:tensorflow:global_step/sec: 1.7439
+INFO:tensorflow:Step 54901, elbo bound per timestep: -8.155567
+INFO:tensorflow:Saving checkpoints for 54936 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68039
+INFO:tensorflow:Step 55001, elbo bound per timestep: -8.637684
+INFO:tensorflow:global_step/sec: 1.7239
+INFO:tensorflow:Step 55101, elbo bound per timestep: -8.411175
+INFO:tensorflow:Saving checkpoints for 55141 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67
+INFO:tensorflow:Step 55201, elbo bound per timestep: -8.909611
+INFO:tensorflow:global_step/sec: 1.67197
+INFO:tensorflow:Step 55301, elbo bound per timestep: -8.294140
+INFO:tensorflow:Saving checkpoints for 55343 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72015
+INFO:tensorflow:Step 55401, elbo bound per timestep: -8.334219
+INFO:tensorflow:global_step/sec: 1.21786
+INFO:tensorflow:Step 55501, elbo bound per timestep: -8.014292
+INFO:tensorflow:Saving checkpoints for 55507 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.228
+INFO:tensorflow:Step 55601, elbo bound per timestep: -8.558217
+INFO:tensorflow:Saving checkpoints for 55650 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.25679
+INFO:tensorflow:Step 55701, elbo bound per timestep: -8.248831
+INFO:tensorflow:global_step/sec: 1.30632
+INFO:tensorflow:Step 55801, elbo bound per timestep: -8.307206
+INFO:tensorflow:Saving checkpoints for 55813 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.4255
+INFO:tensorflow:Step 55901, elbo bound per timestep: -8.547276
+INFO:tensorflow:Saving checkpoints for 55987 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.36431
+INFO:tensorflow:Step 56001, elbo bound per timestep: -8.492608
+INFO:tensorflow:global_step/sec: 1.11994
+INFO:tensorflow:Step 56101, elbo bound per timestep: -8.853839
+INFO:tensorflow:Saving checkpoints for 56120 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09433
+INFO:tensorflow:Step 56201, elbo bound per timestep: -8.223707
+INFO:tensorflow:Saving checkpoints for 56253 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08458
+INFO:tensorflow:Step 56301, elbo bound per timestep: -8.548444
+INFO:tensorflow:Saving checkpoints for 56386 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.11742
+INFO:tensorflow:Step 56401, elbo bound per timestep: -8.699149
+INFO:tensorflow:global_step/sec: 1.08137
+INFO:tensorflow:Step 56501, elbo bound per timestep: -8.325212
+INFO:tensorflow:Saving checkpoints for 56517 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.0965
+INFO:tensorflow:Step 56601, elbo bound per timestep: -8.264263
+INFO:tensorflow:Saving checkpoints for 56648 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08125
+INFO:tensorflow:Step 56701, elbo bound per timestep: -8.786198
+INFO:tensorflow:Saving checkpoints for 56794 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.30539
+INFO:tensorflow:Step 56801, elbo bound per timestep: -8.692900
+INFO:tensorflow:global_step/sec: 1.63397
+INFO:tensorflow:Step 56901, elbo bound per timestep: -8.418261
+INFO:tensorflow:Saving checkpoints for 56983 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.45116
+INFO:tensorflow:Step 57001, elbo bound per timestep: -8.574863
+INFO:tensorflow:global_step/sec: 1.30646
+INFO:tensorflow:Step 57101, elbo bound per timestep: -8.462488
+INFO:tensorflow:Saving checkpoints for 57141 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.36039
+INFO:tensorflow:Step 57201, elbo bound per timestep: -7.940940
+INFO:tensorflow:global_step/sec: 1.31957
+INFO:tensorflow:Saving checkpoints for 57301 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 57301, elbo bound per timestep: -8.325579
+INFO:tensorflow:global_step/sec: 1.37262
+INFO:tensorflow:Step 57401, elbo bound per timestep: -8.426099
+INFO:tensorflow:Saving checkpoints for 57466 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.37063
+INFO:tensorflow:Step 57501, elbo bound per timestep: -7.996677
+INFO:tensorflow:global_step/sec: 1.35558
+INFO:tensorflow:Step 57601, elbo bound per timestep: -8.370837
+INFO:tensorflow:Saving checkpoints for 57627 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.22453
+INFO:tensorflow:Step 57701, elbo bound per timestep: -8.123926
+INFO:tensorflow:Saving checkpoints for 57775 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.23074
+INFO:tensorflow:Step 57801, elbo bound per timestep: -8.839233
+INFO:tensorflow:global_step/sec: 1.31192
+INFO:tensorflow:Step 57901, elbo bound per timestep: -8.324691
+INFO:tensorflow:Saving checkpoints for 57934 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.27136
+INFO:tensorflow:Step 58001, elbo bound per timestep: -8.455662
+INFO:tensorflow:Saving checkpoints for 58075 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.16539
+INFO:tensorflow:Step 58101, elbo bound per timestep: -8.405432
+INFO:tensorflow:global_step/sec: 1.40953
+INFO:tensorflow:Step 58201, elbo bound per timestep: -7.962916
+INFO:tensorflow:Saving checkpoints for 58240 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.25672
+INFO:tensorflow:Step 58301, elbo bound per timestep: -7.903555
+INFO:tensorflow:Saving checkpoints for 58377 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.06822
+INFO:tensorflow:Step 58401, elbo bound per timestep: -8.471130
+INFO:tensorflow:global_step/sec: 1.26902
+INFO:tensorflow:Step 58501, elbo bound per timestep: -8.291494
+INFO:tensorflow:Saving checkpoints for 58526 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.57391
+INFO:tensorflow:Step 58601, elbo bound per timestep: -8.136850
+INFO:tensorflow:global_step/sec: 1.68912
+INFO:tensorflow:Step 58701, elbo bound per timestep: -8.821650
+INFO:tensorflow:Saving checkpoints for 58727 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.53214
+INFO:tensorflow:Step 58801, elbo bound per timestep: -8.770810
+INFO:tensorflow:global_step/sec: 1.68454
+INFO:tensorflow:Step 58901, elbo bound per timestep: -8.302746
+INFO:tensorflow:Saving checkpoints for 58921 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.35333
+INFO:tensorflow:Step 59001, elbo bound per timestep: -8.398148
+INFO:tensorflow:Saving checkpoints for 59062 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.997577
+INFO:tensorflow:Step 59101, elbo bound per timestep: -8.547366
+INFO:tensorflow:Saving checkpoints for 59181 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.05907
+INFO:tensorflow:Step 59201, elbo bound per timestep: -8.157835
+INFO:tensorflow:global_step/sec: 1.20443
+INFO:tensorflow:Step 59301, elbo bound per timestep: -8.969404
+INFO:tensorflow:Saving checkpoints for 59325 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.17318
+INFO:tensorflow:Step 59401, elbo bound per timestep: -9.041323
+INFO:tensorflow:Saving checkpoints for 59468 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.16559
+INFO:tensorflow:Step 59501, elbo bound per timestep: -8.375503
+INFO:tensorflow:global_step/sec: 1.14383
+INFO:tensorflow:Step 59601, elbo bound per timestep: -8.431236
+INFO:tensorflow:Saving checkpoints for 59605 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.964685
+INFO:tensorflow:Step 59701, elbo bound per timestep: -8.173674
+INFO:tensorflow:Saving checkpoints for 59725 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.04566
+INFO:tensorflow:Step 59801, elbo bound per timestep: -7.857179
+INFO:tensorflow:Saving checkpoints for 59845 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.984842
+INFO:tensorflow:Step 59901, elbo bound per timestep: -8.497172
+INFO:tensorflow:Saving checkpoints for 59961 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.901315
+INFO:tensorflow:Step 60001, elbo bound per timestep: -8.348436
+INFO:tensorflow:Saving checkpoints for 60073 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.95621
+INFO:tensorflow:Step 60101, elbo bound per timestep: -8.359758
+INFO:tensorflow:Saving checkpoints for 60193 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.00891
+INFO:tensorflow:Step 60201, elbo bound per timestep: -8.168721
+INFO:tensorflow:global_step/sec: 0.970811
+INFO:tensorflow:Step 60301, elbo bound per timestep: -8.960924
+INFO:tensorflow:Saving checkpoints for 60310 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 0.983687
+INFO:tensorflow:Step 60401, elbo bound per timestep: -8.244791
+INFO:tensorflow:Saving checkpoints for 60427 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.03552
+INFO:tensorflow:Step 60501, elbo bound per timestep: -8.291700
+INFO:tensorflow:Saving checkpoints for 60565 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.24046
+INFO:tensorflow:Step 60601, elbo bound per timestep: -7.641626
+INFO:tensorflow:global_step/sec: 1.32101
+INFO:tensorflow:Step 60701, elbo bound per timestep: -8.892605
+INFO:tensorflow:Saving checkpoints for 60725 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65053
+INFO:tensorflow:Step 60801, elbo bound per timestep: -8.437643
+INFO:tensorflow:global_step/sec: 1.64474
+INFO:tensorflow:Step 60901, elbo bound per timestep: -8.677689
+INFO:tensorflow:Saving checkpoints for 60924 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.32089
+INFO:tensorflow:Step 61001, elbo bound per timestep: -7.535178
+INFO:tensorflow:Saving checkpoints for 61086 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.3754
+INFO:tensorflow:Step 61101, elbo bound per timestep: -8.340510
+INFO:tensorflow:global_step/sec: 1.29093
+INFO:tensorflow:Step 61201, elbo bound per timestep: -9.041800
+INFO:tensorflow:Saving checkpoints for 61238 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.26039
+INFO:tensorflow:Step 61301, elbo bound per timestep: -8.722340
+INFO:tensorflow:Saving checkpoints for 61394 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.33228
+INFO:tensorflow:Step 61401, elbo bound per timestep: -8.138594
+INFO:tensorflow:global_step/sec: 1.2002
+INFO:tensorflow:Step 61501, elbo bound per timestep: -8.178112
+INFO:tensorflow:Saving checkpoints for 61550 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.60056
+INFO:tensorflow:Step 61601, elbo bound per timestep: -8.572506
+INFO:tensorflow:global_step/sec: 1.20297
+INFO:tensorflow:Step 61701, elbo bound per timestep: -8.883463
+INFO:tensorflow:Saving checkpoints for 61708 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.32914
+INFO:tensorflow:Step 61801, elbo bound per timestep: -7.316455
+INFO:tensorflow:Saving checkpoints for 61878 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.50078
+INFO:tensorflow:Step 61901, elbo bound per timestep: -8.076605
+INFO:tensorflow:global_step/sec: 1.66115
+INFO:tensorflow:Step 62001, elbo bound per timestep: -8.353404
+INFO:tensorflow:Saving checkpoints for 62080 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72142
+INFO:tensorflow:Step 62101, elbo bound per timestep: -8.723385
+INFO:tensorflow:global_step/sec: 1.67126
+INFO:tensorflow:Step 62201, elbo bound per timestep: -8.100437
+INFO:tensorflow:Saving checkpoints for 62282 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70096
+INFO:tensorflow:Step 62301, elbo bound per timestep: -8.401802
+INFO:tensorflow:global_step/sec: 1.69776
+INFO:tensorflow:Step 62401, elbo bound per timestep: -8.100717
+INFO:tensorflow:Saving checkpoints for 62483 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65423
+INFO:tensorflow:Step 62501, elbo bound per timestep: -8.021382
+INFO:tensorflow:global_step/sec: 1.71312
+INFO:tensorflow:Step 62601, elbo bound per timestep: -8.506607
+INFO:tensorflow:Saving checkpoints for 62687 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6726
+INFO:tensorflow:Step 62701, elbo bound per timestep: -8.372409
+INFO:tensorflow:global_step/sec: 1.67789
+INFO:tensorflow:Step 62801, elbo bound per timestep: -8.326897
+INFO:tensorflow:Saving checkpoints for 62891 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69147
+INFO:tensorflow:Step 62901, elbo bound per timestep: -8.586769
+INFO:tensorflow:global_step/sec: 1.66244
+INFO:tensorflow:Step 63001, elbo bound per timestep: -8.590445
+INFO:tensorflow:Saving checkpoints for 63089 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.62705
+INFO:tensorflow:Step 63101, elbo bound per timestep: -8.917826
+INFO:tensorflow:global_step/sec: 1.57587
+INFO:tensorflow:Step 63201, elbo bound per timestep: -7.767641
+INFO:tensorflow:Saving checkpoints for 63263 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.2334
+INFO:tensorflow:Step 63301, elbo bound per timestep: -8.600573
+INFO:tensorflow:global_step/sec: 1.33567
+INFO:tensorflow:Step 63401, elbo bound per timestep: -7.207758
+INFO:tensorflow:Saving checkpoints for 63421 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.36622
+INFO:tensorflow:Step 63501, elbo bound per timestep: -8.335764
+INFO:tensorflow:Saving checkpoints for 63579 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.32226
+INFO:tensorflow:Step 63601, elbo bound per timestep: -8.265326
+INFO:tensorflow:global_step/sec: 1.70311
+INFO:tensorflow:Step 63701, elbo bound per timestep: -8.668041
+INFO:tensorflow:Saving checkpoints for 63760 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.15379
+INFO:tensorflow:Step 63801, elbo bound per timestep: -7.859621
+INFO:tensorflow:global_step/sec: 1.30129
+INFO:tensorflow:Step 63901, elbo bound per timestep: -8.857815
+INFO:tensorflow:Saving checkpoints for 63906 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.33514
+INFO:tensorflow:Step 64001, elbo bound per timestep: -8.764484
+INFO:tensorflow:Saving checkpoints for 64067 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.34423
+INFO:tensorflow:Step 64101, elbo bound per timestep: -8.251444
+INFO:tensorflow:global_step/sec: 1.69423
+INFO:tensorflow:Step 64201, elbo bound per timestep: -8.731682
+INFO:tensorflow:Saving checkpoints for 64262 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68664
+INFO:tensorflow:Step 64301, elbo bound per timestep: -8.225242
+INFO:tensorflow:global_step/sec: 1.71526
+INFO:tensorflow:Step 64401, elbo bound per timestep: -8.713594
+INFO:tensorflow:Saving checkpoints for 64464 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.59254
+INFO:tensorflow:Step 64501, elbo bound per timestep: -8.449440
+INFO:tensorflow:global_step/sec: 1.37196
+INFO:tensorflow:Step 64601, elbo bound per timestep: -8.101423
+INFO:tensorflow:Saving checkpoints for 64639 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.59834
+INFO:tensorflow:Step 64701, elbo bound per timestep: -8.309999
+INFO:tensorflow:global_step/sec: 1.45079
+INFO:tensorflow:Step 64801, elbo bound per timestep: -7.869598
+INFO:tensorflow:Saving checkpoints for 64819 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.32427
+INFO:tensorflow:Step 64901, elbo bound per timestep: -8.105968
+INFO:tensorflow:Saving checkpoints for 64980 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.30703
+INFO:tensorflow:Step 65001, elbo bound per timestep: -8.299265
+INFO:tensorflow:global_step/sec: 1.37537
+INFO:tensorflow:Step 65101, elbo bound per timestep: -8.376316
+INFO:tensorflow:Saving checkpoints for 65143 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.52722
+INFO:tensorflow:Step 65201, elbo bound per timestep: -8.085198
+INFO:tensorflow:global_step/sec: 1.67777
+INFO:tensorflow:Step 65301, elbo bound per timestep: -8.082443
+INFO:tensorflow:Saving checkpoints for 65343 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65598
+INFO:tensorflow:Step 65401, elbo bound per timestep: -8.502236
+INFO:tensorflow:global_step/sec: 1.71228
+INFO:tensorflow:Step 65501, elbo bound per timestep: -8.534796
+INFO:tensorflow:Saving checkpoints for 65546 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67784
+INFO:tensorflow:Step 65601, elbo bound per timestep: -8.150784
+INFO:tensorflow:global_step/sec: 1.68033
+INFO:tensorflow:Step 65701, elbo bound per timestep: -8.574269
+INFO:tensorflow:Saving checkpoints for 65750 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72216
+INFO:tensorflow:Step 65801, elbo bound per timestep: -8.190742
+INFO:tensorflow:global_step/sec: 1.73595
+INFO:tensorflow:Step 65901, elbo bound per timestep: -8.313349
+INFO:tensorflow:Saving checkpoints for 65958 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72111
+INFO:tensorflow:Step 66001, elbo bound per timestep: -8.282291
+INFO:tensorflow:global_step/sec: 1.71282
+INFO:tensorflow:Step 66101, elbo bound per timestep: -8.675007
+INFO:tensorflow:Saving checkpoints for 66165 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72242
+INFO:tensorflow:Step 66201, elbo bound per timestep: -8.594440
+INFO:tensorflow:global_step/sec: 1.70691
+INFO:tensorflow:Step 66301, elbo bound per timestep: -8.469119
+INFO:tensorflow:Saving checkpoints for 66371 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74385
+INFO:tensorflow:Step 66401, elbo bound per timestep: -7.880681
+INFO:tensorflow:global_step/sec: 1.7408
+INFO:tensorflow:Step 66501, elbo bound per timestep: -8.486933
+INFO:tensorflow:Saving checkpoints for 66580 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71425
+INFO:tensorflow:Step 66601, elbo bound per timestep: -8.190083
+INFO:tensorflow:global_step/sec: 1.72026
+INFO:tensorflow:Step 66701, elbo bound per timestep: -8.239974
+INFO:tensorflow:Saving checkpoints for 66788 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71924
+INFO:tensorflow:Step 66801, elbo bound per timestep: -8.006762
+INFO:tensorflow:global_step/sec: 1.73347
+INFO:tensorflow:Step 66901, elbo bound per timestep: -8.866110
+INFO:tensorflow:Saving checkpoints for 66995 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73405
+INFO:tensorflow:Step 67001, elbo bound per timestep: -8.509261
+INFO:tensorflow:global_step/sec: 1.73683
+INFO:tensorflow:Step 67101, elbo bound per timestep: -8.376778
+INFO:tensorflow:global_step/sec: 1.72645
+INFO:tensorflow:Step 67201, elbo bound per timestep: -8.965441
+INFO:tensorflow:Saving checkpoints for 67202 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70427
+INFO:tensorflow:Step 67301, elbo bound per timestep: -8.446972
+INFO:tensorflow:Saving checkpoints for 67392 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.40997
+INFO:tensorflow:Step 67401, elbo bound per timestep: -8.383585
+INFO:tensorflow:global_step/sec: 1.12867
+INFO:tensorflow:Step 67501, elbo bound per timestep: -8.485925
+INFO:tensorflow:Saving checkpoints for 67528 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.12191
+INFO:tensorflow:Step 67601, elbo bound per timestep: -8.333815
+INFO:tensorflow:Saving checkpoints for 67662 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08715
+INFO:tensorflow:Step 67701, elbo bound per timestep: -8.236977
+INFO:tensorflow:Saving checkpoints for 67798 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.14641
+INFO:tensorflow:Step 67801, elbo bound per timestep: -8.685384
+INFO:tensorflow:global_step/sec: 1.21343
+INFO:tensorflow:Step 67901, elbo bound per timestep: -8.375484
+INFO:tensorflow:Saving checkpoints for 67945 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.15036
+INFO:tensorflow:Step 68001, elbo bound per timestep: -8.310011
+INFO:tensorflow:Saving checkpoints for 68073 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.05803
+INFO:tensorflow:Step 68101, elbo bound per timestep: -7.943905
+INFO:tensorflow:global_step/sec: 1.08991
+INFO:tensorflow:Step 68201, elbo bound per timestep: -8.320160
+INFO:tensorflow:Saving checkpoints for 68204 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.0755
+INFO:tensorflow:Step 68301, elbo bound per timestep: -8.714937
+INFO:tensorflow:Saving checkpoints for 68333 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.0585
+INFO:tensorflow:Step 68401, elbo bound per timestep: -8.508965
+INFO:tensorflow:Saving checkpoints for 68463 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08657
+INFO:tensorflow:Step 68501, elbo bound per timestep: -8.629385
+INFO:tensorflow:Saving checkpoints for 68592 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.07181
+INFO:tensorflow:Step 68601, elbo bound per timestep: -8.175948
+INFO:tensorflow:global_step/sec: 1.08181
+INFO:tensorflow:Step 68701, elbo bound per timestep: -8.740797
+INFO:tensorflow:Saving checkpoints for 68722 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.05366
+INFO:tensorflow:Step 68801, elbo bound per timestep: -8.240392
+INFO:tensorflow:Saving checkpoints for 68850 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.04243
+INFO:tensorflow:Step 68901, elbo bound per timestep: -8.439338
+INFO:tensorflow:Saving checkpoints for 68977 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08725
+INFO:tensorflow:Step 69001, elbo bound per timestep: -7.966830
+INFO:tensorflow:global_step/sec: 1.06737
+INFO:tensorflow:Step 69101, elbo bound per timestep: -8.556070
+INFO:tensorflow:Saving checkpoints for 69106 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09506
+INFO:tensorflow:Step 69201, elbo bound per timestep: -7.834487
+INFO:tensorflow:Saving checkpoints for 69238 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.07712
+INFO:tensorflow:Step 69301, elbo bound per timestep: -8.307330
+INFO:tensorflow:Saving checkpoints for 69371 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.11973
+INFO:tensorflow:Step 69401, elbo bound per timestep: -8.212032
+INFO:tensorflow:global_step/sec: 1.09335
+INFO:tensorflow:Step 69501, elbo bound per timestep: -8.329561
+INFO:tensorflow:Saving checkpoints for 69502 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.1002
+INFO:tensorflow:Step 69601, elbo bound per timestep: -8.333466
+INFO:tensorflow:Saving checkpoints for 69634 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.06352
+INFO:tensorflow:Step 69701, elbo bound per timestep: -8.193531
+INFO:tensorflow:Saving checkpoints for 69764 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.05978
+INFO:tensorflow:Step 69801, elbo bound per timestep: -7.849035
+INFO:tensorflow:Saving checkpoints for 69894 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09832
+INFO:tensorflow:Step 69901, elbo bound per timestep: -8.561012
+INFO:tensorflow:global_step/sec: 1.06177
+INFO:tensorflow:Step 70001, elbo bound per timestep: -8.398522
+INFO:tensorflow:Saving checkpoints for 70022 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09581
+INFO:tensorflow:Step 70101, elbo bound per timestep: -8.216112
+INFO:tensorflow:Saving checkpoints for 70153 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.09041
+INFO:tensorflow:Step 70201, elbo bound per timestep: -8.424255
+INFO:tensorflow:Saving checkpoints for 70285 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.08079
+INFO:tensorflow:Step 70301, elbo bound per timestep: -8.288198
+INFO:tensorflow:global_step/sec: 1.11733
+INFO:tensorflow:Step 70401, elbo bound per timestep: -8.486465
+INFO:tensorflow:Saving checkpoints for 70418 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.11282
+INFO:tensorflow:Step 70501, elbo bound per timestep: -8.078884
+INFO:tensorflow:Saving checkpoints for 70566 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.48935
+INFO:tensorflow:Step 70601, elbo bound per timestep: -8.051745
+INFO:tensorflow:global_step/sec: 1.09434
+INFO:tensorflow:Step 70701, elbo bound per timestep: -8.390690
+INFO:tensorflow:Saving checkpoints for 70710 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.11457
+INFO:tensorflow:Step 70801, elbo bound per timestep: -8.300865
+INFO:tensorflow:Saving checkpoints for 70843 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.14785
+INFO:tensorflow:Step 70901, elbo bound per timestep: -8.393284
+INFO:tensorflow:Saving checkpoints for 70993 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.3096
+INFO:tensorflow:Step 71001, elbo bound per timestep: -8.379480
+INFO:tensorflow:global_step/sec: 1.64735
+INFO:tensorflow:Step 71101, elbo bound per timestep: -8.397434
+INFO:tensorflow:Saving checkpoints for 71193 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66991
+INFO:tensorflow:Step 71201, elbo bound per timestep: -8.560719
+INFO:tensorflow:global_step/sec: 1.65664
+INFO:tensorflow:Step 71301, elbo bound per timestep: -8.176476
+INFO:tensorflow:Saving checkpoints for 71395 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67464
+INFO:tensorflow:Step 71401, elbo bound per timestep: -8.090421
+INFO:tensorflow:global_step/sec: 1.69311
+INFO:tensorflow:Step 71501, elbo bound per timestep: -8.476173
+INFO:tensorflow:Saving checkpoints for 71596 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.663
+INFO:tensorflow:Step 71601, elbo bound per timestep: -8.466640
+INFO:tensorflow:global_step/sec: 1.70119
+INFO:tensorflow:Step 71701, elbo bound per timestep: -8.101761
+INFO:tensorflow:Saving checkpoints for 71798 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65866
+INFO:tensorflow:Step 71801, elbo bound per timestep: -8.288574
+INFO:tensorflow:global_step/sec: 1.7264
+INFO:tensorflow:Step 71901, elbo bound per timestep: -8.149881
+INFO:tensorflow:global_step/sec: 1.6666
+INFO:tensorflow:Saving checkpoints for 72001 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:Step 72001, elbo bound per timestep: -8.460487
+INFO:tensorflow:global_step/sec: 1.72221
+INFO:tensorflow:Step 72101, elbo bound per timestep: -8.461418
+INFO:tensorflow:global_step/sec: 1.73863
+INFO:tensorflow:Step 72201, elbo bound per timestep: -9.164093
+INFO:tensorflow:Saving checkpoints for 72208 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69339
+INFO:tensorflow:Step 72301, elbo bound per timestep: -8.577268
+INFO:tensorflow:global_step/sec: 1.71959
+INFO:tensorflow:Step 72401, elbo bound per timestep: -8.018074
+INFO:tensorflow:Saving checkpoints for 72414 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72509
+INFO:tensorflow:Step 72501, elbo bound per timestep: -8.687861
+INFO:tensorflow:global_step/sec: 1.7215
+INFO:tensorflow:Step 72601, elbo bound per timestep: -7.978602
+INFO:tensorflow:Saving checkpoints for 72622 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67873
+INFO:tensorflow:Step 72701, elbo bound per timestep: -8.659391
+INFO:tensorflow:global_step/sec: 1.71831
+INFO:tensorflow:Step 72801, elbo bound per timestep: -8.495150
+INFO:tensorflow:Saving checkpoints for 72827 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72132
+INFO:tensorflow:Step 72901, elbo bound per timestep: -8.101831
+INFO:tensorflow:global_step/sec: 1.73815
+INFO:tensorflow:Step 73001, elbo bound per timestep: -8.493015
+INFO:tensorflow:Saving checkpoints for 73033 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7383
+INFO:tensorflow:Step 73101, elbo bound per timestep: -8.700583
+INFO:tensorflow:global_step/sec: 1.74524
+INFO:tensorflow:Step 73201, elbo bound per timestep: -8.349754
+INFO:tensorflow:Saving checkpoints for 73244 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73495
+INFO:tensorflow:Step 73301, elbo bound per timestep: -8.267377
+INFO:tensorflow:global_step/sec: 1.73757
+INFO:tensorflow:Step 73401, elbo bound per timestep: -8.315474
+INFO:tensorflow:Saving checkpoints for 73453 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74076
+INFO:tensorflow:Step 73501, elbo bound per timestep: -8.009142
+INFO:tensorflow:global_step/sec: 1.74337
+INFO:tensorflow:Step 73601, elbo bound per timestep: -8.458340
+INFO:tensorflow:Saving checkpoints for 73662 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.7516
+INFO:tensorflow:Step 73701, elbo bound per timestep: -8.403585
+INFO:tensorflow:global_step/sec: 1.7532
+INFO:tensorflow:Step 73801, elbo bound per timestep: -8.134827
+INFO:tensorflow:Saving checkpoints for 73872 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74878
+INFO:tensorflow:Step 73901, elbo bound per timestep: -8.162811
+INFO:tensorflow:global_step/sec: 1.75427
+INFO:tensorflow:Step 74001, elbo bound per timestep: -8.753289
+INFO:tensorflow:Saving checkpoints for 74083 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.75548
+INFO:tensorflow:Step 74101, elbo bound per timestep: -8.382859
+INFO:tensorflow:global_step/sec: 1.75881
+INFO:tensorflow:Step 74201, elbo bound per timestep: -9.132318
+INFO:tensorflow:Saving checkpoints for 74295 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74825
+INFO:tensorflow:Step 74301, elbo bound per timestep: -8.154984
+INFO:tensorflow:global_step/sec: 1.7559
+INFO:tensorflow:Step 74401, elbo bound per timestep: -7.988225
+INFO:tensorflow:global_step/sec: 1.75336
+INFO:tensorflow:Step 74501, elbo bound per timestep: -7.643320
+INFO:tensorflow:Saving checkpoints for 74507 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.74258
+INFO:tensorflow:Step 74601, elbo bound per timestep: -8.525505
+INFO:tensorflow:global_step/sec: 1.71538
+INFO:tensorflow:Step 74701, elbo bound per timestep: -8.042720
+INFO:tensorflow:Saving checkpoints for 74714 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67329
+INFO:tensorflow:Step 74801, elbo bound per timestep: -8.405849
+INFO:tensorflow:global_step/sec: 1.73596
+INFO:tensorflow:Step 74901, elbo bound per timestep: -8.715191
+INFO:tensorflow:Saving checkpoints for 74920 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66258
+INFO:tensorflow:Step 75001, elbo bound per timestep: -8.655905
+INFO:tensorflow:global_step/sec: 1.71522
+INFO:tensorflow:Step 75101, elbo bound per timestep: -8.304099
+INFO:tensorflow:Saving checkpoints for 75125 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67509
+INFO:tensorflow:Step 75201, elbo bound per timestep: -7.911180
+INFO:tensorflow:global_step/sec: 1.69989
+INFO:tensorflow:Step 75301, elbo bound per timestep: -8.374979
+INFO:tensorflow:Saving checkpoints for 75327 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69152
+INFO:tensorflow:Step 75401, elbo bound per timestep: -8.311590
+INFO:tensorflow:global_step/sec: 1.66104
+INFO:tensorflow:Step 75501, elbo bound per timestep: -8.432976
+INFO:tensorflow:Saving checkpoints for 75529 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71751
+INFO:tensorflow:Step 75601, elbo bound per timestep: -8.416021
+INFO:tensorflow:global_step/sec: 1.65675
+INFO:tensorflow:Step 75701, elbo bound per timestep: -7.637456
+INFO:tensorflow:Saving checkpoints for 75730 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68098
+INFO:tensorflow:Step 75801, elbo bound per timestep: -8.358593
+INFO:tensorflow:global_step/sec: 1.73825
+INFO:tensorflow:Step 75901, elbo bound per timestep: -8.696245
+INFO:tensorflow:Saving checkpoints for 75938 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67908
+INFO:tensorflow:Step 76001, elbo bound per timestep: -8.370438
+INFO:tensorflow:global_step/sec: 1.73678
+INFO:tensorflow:Step 76101, elbo bound per timestep: -8.529221
+INFO:tensorflow:Saving checkpoints for 76145 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.65073
+INFO:tensorflow:Step 76201, elbo bound per timestep: -8.301555
+INFO:tensorflow:global_step/sec: 1.70736
+INFO:tensorflow:Step 76301, elbo bound per timestep: -7.646386
+INFO:tensorflow:Saving checkpoints for 76346 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68003
+INFO:tensorflow:Step 76401, elbo bound per timestep: -8.225882
+INFO:tensorflow:global_step/sec: 1.6793
+INFO:tensorflow:Step 76501, elbo bound per timestep: -8.023981
+INFO:tensorflow:Saving checkpoints for 76549 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72554
+INFO:tensorflow:Step 76601, elbo bound per timestep: -7.798273
+INFO:tensorflow:global_step/sec: 1.65323
+INFO:tensorflow:Step 76701, elbo bound per timestep: -7.843829
+INFO:tensorflow:Saving checkpoints for 76751 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68728
+INFO:tensorflow:Step 76801, elbo bound per timestep: -8.544978
+INFO:tensorflow:global_step/sec: 1.70779
+INFO:tensorflow:Step 76901, elbo bound per timestep: -8.646390
+INFO:tensorflow:Saving checkpoints for 76953 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67906
+INFO:tensorflow:Step 77001, elbo bound per timestep: -8.596912
+INFO:tensorflow:global_step/sec: 1.72703
+INFO:tensorflow:Step 77101, elbo bound per timestep: -8.195044
+INFO:tensorflow:Saving checkpoints for 77157 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66525
+INFO:tensorflow:Step 77201, elbo bound per timestep: -7.785573
+INFO:tensorflow:global_step/sec: 1.73386
+INFO:tensorflow:Step 77301, elbo bound per timestep: -8.320820
+INFO:tensorflow:Saving checkpoints for 77362 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.66689
+INFO:tensorflow:Step 77401, elbo bound per timestep: -8.018737
+INFO:tensorflow:global_step/sec: 1.73412
+INFO:tensorflow:Step 77501, elbo bound per timestep: -8.629309
+INFO:tensorflow:Saving checkpoints for 77570 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73082
+INFO:tensorflow:Step 77601, elbo bound per timestep: -8.687728
+INFO:tensorflow:global_step/sec: 1.69366
+INFO:tensorflow:Step 77701, elbo bound per timestep: -8.867985
+INFO:tensorflow:Saving checkpoints for 77774 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.71103
+INFO:tensorflow:Step 77801, elbo bound per timestep: -8.722910
+INFO:tensorflow:global_step/sec: 1.68136
+INFO:tensorflow:Step 77901, elbo bound per timestep: -8.532387
+INFO:tensorflow:Saving checkpoints for 77979 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69836
+INFO:tensorflow:Step 78001, elbo bound per timestep: -8.520115
+INFO:tensorflow:global_step/sec: 1.72207
+INFO:tensorflow:Step 78101, elbo bound per timestep: -8.690386
+INFO:tensorflow:Saving checkpoints for 78184 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67483
+INFO:tensorflow:Step 78201, elbo bound per timestep: -8.068154
+INFO:tensorflow:global_step/sec: 1.73778
+INFO:tensorflow:Step 78301, elbo bound per timestep: -8.138368
+INFO:tensorflow:Saving checkpoints for 78389 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.6614
+INFO:tensorflow:Step 78401, elbo bound per timestep: -8.385349
+INFO:tensorflow:global_step/sec: 1.73678
+INFO:tensorflow:Step 78501, elbo bound per timestep: -8.184910
+INFO:tensorflow:Saving checkpoints for 78596 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67888
+INFO:tensorflow:Step 78601, elbo bound per timestep: -7.546160
+INFO:tensorflow:global_step/sec: 1.71299
+INFO:tensorflow:Step 78701, elbo bound per timestep: -8.084098
+INFO:tensorflow:global_step/sec: 1.72074
+INFO:tensorflow:Step 78801, elbo bound per timestep: -7.600430
+INFO:tensorflow:Saving checkpoints for 78802 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.68526
+INFO:tensorflow:Step 78901, elbo bound per timestep: -8.677857
+INFO:tensorflow:global_step/sec: 1.74208
+INFO:tensorflow:Step 79001, elbo bound per timestep: -8.514327
+INFO:tensorflow:Saving checkpoints for 79008 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.67674
+INFO:tensorflow:Step 79101, elbo bound per timestep: -8.038429
+INFO:tensorflow:global_step/sec: 1.71288
+INFO:tensorflow:Step 79201, elbo bound per timestep: -8.036823
+INFO:tensorflow:Saving checkpoints for 79213 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.70445
+INFO:tensorflow:Step 79301, elbo bound per timestep: -8.482533
+INFO:tensorflow:global_step/sec: 1.67371
+INFO:tensorflow:Step 79401, elbo bound per timestep: -8.490582
+INFO:tensorflow:Saving checkpoints for 79418 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.72674
+INFO:tensorflow:Step 79501, elbo bound per timestep: -8.283455
+INFO:tensorflow:global_step/sec: 1.65654
+INFO:tensorflow:Step 79601, elbo bound per timestep: -8.512380
+INFO:tensorflow:Saving checkpoints for 79621 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.73094
+INFO:tensorflow:Step 79701, elbo bound per timestep: -8.458578
+INFO:tensorflow:global_step/sec: 1.72867
+INFO:tensorflow:Step 79801, elbo bound per timestep: -8.123255
+INFO:tensorflow:Saving checkpoints for 79830 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.69461
+INFO:tensorflow:Step 79901, elbo bound per timestep: -8.370071
+INFO:tensorflow:global_step/sec: 1.68071
+INFO:tensorflow:Step 80001, elbo bound per timestep: -8.126253
+INFO:tensorflow:Saving checkpoints for 80001 into ./chkpt/elbo-AIS_20180101_valid_track.pkl-data_dim-226-latent_size-100-batch_size-32/model.ckpt.
+Global step:  80001
+
